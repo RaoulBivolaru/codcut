@@ -8,17 +8,19 @@ interface ImageProps {
   alt: string;
   w?: number;
   h?: number;
+  isFull?: boolean;
 }
 
-export default function ({ src, alt, w, h }: ImageProps) {
+export default function ({ src, alt, w, h, isFull }: ImageProps) {
   const { width } = useWindowSize();
 
   const isMobile = useMemo(() => width <= BREAKPOINT.SMALLER_MOBILE, [width]);
 
   return (
     <img
-      className={clsx('block object-contain', {
-        'w-full': isMobile,
+      className={clsx('block object-cover', {
+        'w-full': isMobile || isFull,
+        'h-screen': isFull,
       })}
       src={src}
       alt={alt}

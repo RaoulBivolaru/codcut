@@ -5,14 +5,13 @@ import Image from '../components/Image';
 export default function () {
   return (
     <section className="px-10">
-      <div className="h-0.5 bg-accent opacity-30"></div>
       <div className="flex md:gap-20 justify-start items-start flex-col md:flex-row">
         <Image
           w={500}
           src="https://images.unsplash.com/photo-1506755855567-92ff770e8d00"
           alt="profile"
         />
-        <div className="py-10 font-light md:pr-10 text-lg">
+        <div className="py-10 font-light md:pr-10 text-lg md:pt-10">
           <h2 className="text-white text-6xl font-bold tracking-wide mb-5">
             About me
           </h2>
