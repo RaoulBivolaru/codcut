@@ -3,7 +3,9 @@ import React from 'react';
 
 export default function () {
   return (
-    <section className="h-screen flex items-center justify-between font-heading p-10 relative">
+    <section
+      className="h-screen flex items-center justify-between font-heading p-10 relative"
+      id="home">
       <div className="absolute inset-0">
         <Image
           src="https://cdn.99images.com/photos/wallpapers/animals-birds/cat%20android-iphone-desktop-hd-backgrounds-wallpapers-1080p-4k-ubvlc.jpg"
@@ -15,7 +17,7 @@ export default function () {
         <span className="text-white uppercase tracking-widest font-light text-xl mb-5 opacity-80">
           Fullstack digital freelancer
         </span>
-        <h1 className="text-white font-extrabold text-7xl">
+        <h1 className="text-white font-extrabold text-5xl md:text-7xl">
           Hello, I'm <span className="text-accent">Raoul</span>
           <span className="text-yellow">.</span>
           <br />

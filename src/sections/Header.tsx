@@ -8,12 +8,7 @@ export default function () {
     <header className="p-10 flex justify-between items-center absolute right-0 left-0 top-0 z-10">
       <Image src="logo.svg" alt="logo" w={120} />
       <HeaderNavigation />
-      <Button
-        label="Let's Talk"
-        onClick={() => {}}
-        outline
-        className="ml-auto"
-      />
+      <Button label="Let's Talk" onClick={() => {}} className="ml-auto" />
     </header>
   );
 }

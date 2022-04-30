@@ -1,7 +1,5 @@
 import clsx from 'clsx';
-import { BREAKPOINT } from 'helpers/constants';
-import React, { useMemo } from 'react';
-import { useWindowSize } from 'react-use';
+import React from 'react';
 
 interface ImageProps {
   src: string;
@@ -12,20 +10,15 @@ interface ImageProps {
 }
 
 export default function ({ src, alt, w, h, isFull }: ImageProps) {
-  const { width } = useWindowSize();
-
-  const isMobile = useMemo(() => width <= BREAKPOINT.SMALLER_MOBILE, [width]);
-
   return (
     <img
       className={clsx('block object-cover', {
-        'w-full': isMobile || isFull,
-        'h-screen': isFull,
+        'w-full h-screen': isFull,
       })}
       src={src}
       alt={alt}
-      width={w && !isMobile ? `${w}em` : 'auto'}
-      height={h && !isMobile ? `${h}em` : 'auto'}
+      width={w ? `${w}em` : 'auto'}
+      height={h ? `${h}em` : 'auto'}
     />
   );
 }

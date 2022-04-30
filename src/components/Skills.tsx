@@ -34,8 +34,8 @@ export default function () {
   const [active, setActive] = useState(0);
 
   return (
-    <div>
-      <nav className="flex align-middle gap-8 text-white mt-2">
+    <>
+      <nav className="flex align-middle gap-8 text-white mt-2 w-full flex-wrap">
         <SkillMenuItem
           idx={0}
           active={active}
@@ -67,6 +67,6 @@ export default function () {
         {active === 2 && <Experience />}
         {active === 3 && <Education />}
       </div>
-    </div>
+    </>
   );
 }

@@ -17,8 +17,16 @@ const HeaderNavigationItem = ({
   label,
   mobileView,
 }: HeaderNavigationItemProps) => {
+  const navigate = () => {
+    const section = document.getElementById(label.toLowerCase());
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <a
+      onClick={navigate}
       className={clsx(
         'hover:text-accent cursor-pointer transition-color after:transition-width after:top-1 after:relative after:w-0 after:h-0.5 after:block after:bg-accent',
         {
