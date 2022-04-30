@@ -13,11 +13,11 @@ interface ImageProps {
 export default function ({ src, alt, w, h }: ImageProps) {
   const { width } = useWindowSize();
 
-  const isMobile = useMemo(() => width <= BREAKPOINT.MOBILE, [width]);
+  const isMobile = useMemo(() => width <= BREAKPOINT.SMALLER_MOBILE, [width]);
 
   return (
     <img
-      className={clsx('block', {
+      className={clsx('block object-contain', {
         'w-full': isMobile,
       })}
       src={src}

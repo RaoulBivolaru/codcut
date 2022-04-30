@@ -6,7 +6,7 @@ export default function () {
   return (
     <section className="px-10">
       <div className="h-0.5 bg-accent opacity-30"></div>
-      <div className="flex gap-20">
+      <div className="flex md:gap-20 justify-start items-start flex-col md:flex-row">
         <Image
           w={500}
           src="https://images.unsplash.com/photo-1506755855567-92ff770e8d00"
