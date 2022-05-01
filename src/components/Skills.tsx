@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import Activities from 'content/Activities';
+import Services from 'content/Services';
 import Education from 'content/Education';
 import Experience from 'content/Experience';
 import Skills from 'content/Skills';
@@ -39,7 +39,7 @@ export default function () {
         <SkillMenuItem
           idx={0}
           active={active}
-          label="Activities"
+          label="Services"
           onClick={() => setActive(0)}
         />
         <SkillMenuItem
@@ -62,7 +62,7 @@ export default function () {
         />
       </nav>
       <div className="flex flex-col gap-5 mt-8">
-        {active === 0 && <Activities />}
+        {active === 0 && <Services />}
         {active === 1 && <Skills />}
         {active === 2 && <Experience />}
         {active === 3 && <Education />}
