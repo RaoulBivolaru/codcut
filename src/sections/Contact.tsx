@@ -1,5 +1,6 @@
 import Form from 'components/Form';
 import FormInput from 'components/FormInput';
+import { showSuccessAlert } from 'helpers/alert';
 import { sendEmail } from 'helpers/email';
 import { VALIDATION_SCHEMAS } from 'helpers/validation';
 import React, { useState } from 'react';
@@ -18,7 +19,9 @@ export default function () {
     setLoading(true);
     try {
       const response = await sendEmail(data);
-      console.log(response);
+      if ('success' in response) {
+        showSuccessAlert('Message sent!', 'Will get back to you right away.');
+      }
     } catch (err) {
       console.log(err);
     }

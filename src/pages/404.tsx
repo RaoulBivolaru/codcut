@@ -10,7 +10,7 @@ export default function () {
         <div className="items-center flex flex-col">
           <h1 className="text-accent text-2xl font-bold mb-2">NOT FOUND</h1>
           <Link to="/" replace>
-            <Button label="Go home" onClick={() => {}} />
+            <Button label="Go home" />
           </Link>
         </div>
       </section>

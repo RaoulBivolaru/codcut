@@ -4,7 +4,7 @@ import { AiOutlineLoading } from 'react-icons/ai';
 
 interface ButtonProps {
   label: string;
-  onClick: () => void;
+  onClick?: () => void;
   className?: string;
   loading?: boolean;
   isSubmit?: boolean;
