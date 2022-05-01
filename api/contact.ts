@@ -12,7 +12,6 @@ const mailer = nodemailer.createTransport({
   host: process.env.SMTP_HOST,
   port: 465,
   secure: true,
-  sender: process.env.CONTACT_ADDRESS,
   auth: {
     user: process.env.SMTP_USER,
     pass: process.env.SMTP_PASSWORD,
@@ -28,7 +27,6 @@ const contact = (req: Request, res: Response) => {
   mailer.sendMail(
     {
       sender: req.body.email,
-      from: req.body.email,
       to: process.env.CONTACT_ADDRESS,
       subject: req.body.subject,
       html: template(req.body.name, req.body.message),
