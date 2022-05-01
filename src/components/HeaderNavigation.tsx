@@ -44,7 +44,7 @@ const NavigationMenu = ({ mobileView }: NavigationMenuProps) => {
     <nav
       className={clsx('text-content flex gap-8', {
         'flex-col': mobileView,
-        'items-center ml-20 mr-auto': !mobileView,
+        'items-center ml-16 mr-auto': !mobileView,
       })}>
       <HeaderNavigationItem label="Home" mobileView={mobileView} />
       <HeaderNavigationItem label="About" mobileView={mobileView} />
