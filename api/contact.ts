@@ -27,27 +27,31 @@ const template = (name: string, message: string, email: string) =>
   `<p>From: ${name}</p><p>Email: ${email}</p><p>Message: ${message}</p>`;
 
 const contact = (req: Request, res: Response) => {
-  const { body } = req;
-  console.log('CONTACT REQUEST BODY: ', body);
+  try {
+    const data = JSON.parse(req.body);
+    console.log('CONTACT REQUEST BODY: ', data);
 
-  mailer.sendMail(
-    {
-      from: {
-        name: body.name,
-        address: process.env.CONTACT_ADDRESS || '',
+    mailer.sendMail(
+      {
+        from: {
+          name: data.name,
+          address: process.env.CONTACT_ADDRESS || '',
+        },
+        to: process.env.CONTACT_ADDRESS,
+        subject: data.subject,
+        html: template(data.name, data.message, data.email),
+        replyTo: data.email,
       },
-      to: process.env.CONTACT_ADDRESS,
-      subject: body.subject,
-      html: template(body.name, body.message, body.email),
-      replyTo: body.email,
-    },
-    (err, info) => {
-      if (err) {
-        return res.status(500).send(err);
-      }
-      res.json({ success: true });
-    },
-  );
+      err => {
+        if (err) {
+          return res.status(500).send(err);
+        }
+        res.json({ success: true });
+      },
+    );
+  } catch (err) {
+    return res.status(500).send(err);
+  }
 };
 
 export default allowCors(contact);
