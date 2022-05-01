@@ -1,22 +1,22 @@
-require(`dotenv`).config()
+require(`dotenv`).config();
 
-const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
+const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 module.exports = {
   siteMetadata: {
-    siteTitle: `raoul.tech`,
-    siteTitleAlt: `raoul.tech freelance`,
-    siteHeadline: `Freelance digital profile`,
-    siteUrl: `https://raoul.tech`,
-    siteDescription: `raou.tech portfolio`,
-    siteLanguage: `en`,
-    siteImage: `/logo.svg`,
-    author: `raoul.tech`,
+    title: `raoul.tech`,
+    headline: `Fullstack digital freelancer`,
+    url: `https://raoul.tech`,
+    description: `Fullstack digital freelancer. Experienced developer with over 10 years of experience in the field`,
+    language: `en`,
+    image: `/logo-dark.svg`,
+    author: `Raoul Bivolaru`,
   },
   plugins: [
     `gatsby-plugin-tsconfig-paths`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-gatsby-cloud`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -24,8 +24,8 @@ module.exports = {
           `Poppins\:100,300,400,700,900`,
           `Montserrat\:100,300,400,700,900`,
         ],
-        display: 'swap'
-      }
+        display: 'swap',
+      },
     },
     shouldAnalyseBundle && {
       resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
@@ -36,4 +36,4 @@ module.exports = {
       },
     },
   ].filter(Boolean),
-}
+};
