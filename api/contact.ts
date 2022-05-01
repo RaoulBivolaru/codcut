@@ -33,10 +33,7 @@ const contact = (req: Request, res: Response) => {
 
     mailer.sendMail(
       {
-        from: {
-          name: data.name,
-          address: data.email,
-        },
+        sender: data.email,
         to: process.env.CONTACT_ADDRESS,
         subject: data.subject,
         html: template(data.name, data.message, data.email),

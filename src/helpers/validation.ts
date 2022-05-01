@@ -14,9 +14,9 @@ function setRequired(schema: Yup.AnySchema) {
 
 const VALIDATION_FIELDS = {
   EMAIL: setPattern(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i),
-  NAME: setMinMaxValidation(2, 25).matches(/^[a-zA-Z ]+$/),
-  SUBJECT: setMinMaxValidation(2, 50).matches(/^[a-zA-Z ]+$/),
-  MESSAGE: setMinMaxValidation(10, 500).matches(/^[a-zA-Z0-9 ]+$/),
+  NAME: setMinMaxValidation(2, 25).matches(/^[a-zA-Z'\- ]+$/),
+  SUBJECT: setMinMaxValidation(2, 50),
+  MESSAGE: setMinMaxValidation(10, 500),
 };
 
 export const VALIDATION_SCHEMAS = {
