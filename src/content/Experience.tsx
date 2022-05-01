@@ -16,7 +16,7 @@ export default function () {
       />
       <ContentItem
         title="Fullstack developer"
-        meta="NetCentric"
+        meta="Netcentric"
         description="2020 - 2021"
       />
       <ContentItem
