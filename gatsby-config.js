@@ -9,7 +9,7 @@ module.exports = {
     url: `https://raoul.tech`,
     description: `Fullstack digital freelancer. Experienced developer with over 10 years of experience in the field`,
     language: `en`,
-    image: `/logo-dark.svg`,
+    image: `https://raoul.tech/logo.png`,
     author: `Raoul Bivolaru`,
   },
   plugins: [
