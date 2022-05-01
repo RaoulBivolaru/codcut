@@ -5,6 +5,11 @@ const allowCors = (fn: any) => async (req: Request, res: Response) => {
   res.setHeader('Access-Control-Allow-Origin', req.headers.origin || '');
   res.setHeader('Access-Control-Allow-Methods', 'POST');
 
+  res.setHeader(
+    'Access-Control-Allow-Headers',
+    'Accept, Content-Length, Content-Type',
+  );
+
   return await fn(req, res);
 };
 
@@ -27,10 +32,14 @@ const contact = (req: Request, res: Response) => {
 
   mailer.sendMail(
     {
-      from: `${body.name} <${body.email}>`,
+      from: {
+        name: body.name,
+        address: body.email,
+      },
       to: process.env.CONTACT_ADDRESS,
       subject: body.subject,
       html: template(body.name, body.message, body.email),
+      replyTo: body.email,
     },
     (err, info) => {
       if (err) {
@@ -41,4 +50,4 @@ const contact = (req: Request, res: Response) => {
   );
 };
 
-export default contact;
+export default allowCors(contact);
