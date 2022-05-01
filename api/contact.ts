@@ -18,18 +18,19 @@ const mailer = nodemailer.createTransport({
   },
 });
 
-const template = (name: string, message: string) =>
-  `<p>From: ${name}</p><p>Message: ${message}</p>`;
+const template = (name: string, message: string, email: string) =>
+  `<p>From: ${name}</p><p>Email: ${email}</p><p>Message: ${message}</p>`;
 
 const contact = (req: Request, res: Response) => {
-  console.log('CONTACT REQUEST BODY: ', req.body);
+  const { body } = req;
+  console.log('CONTACT REQUEST BODY: ', body);
 
   mailer.sendMail(
     {
-      sender: req.body.email,
+      from: `${body.name} <${req.body.email}>`,
       to: process.env.CONTACT_ADDRESS,
       subject: req.body.subject,
-      html: template(req.body.name, req.body.message),
+      html: template(body.name, body.message, body.email),
     },
     (err, info) => {
       if (err) {
