@@ -13,8 +13,10 @@ export default function () {
         <meta name="author" content="Raoul Bivolaru" />
         <meta
           name="description"
-          content="Fullstack digital freelancer. Experienced developer with over 10 years of experience in the domain."
+          content="Fullstack digital freelancer. Experienced developer with over 10 years of experience in the field."
         />
+        <meta property="og:title" content="Fullstack digital freelancer" />
+        <meta property="og:image" content="logo.svg" />
       </Helmet>
       <Hero />
       <About />

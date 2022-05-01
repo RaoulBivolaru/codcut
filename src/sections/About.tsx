@@ -16,7 +16,7 @@ export default function () {
             About me
           </h2>
           <p className="text-content">
-            Fullstack developer with over 10 years of experience in the domain.
+            Fullstack developer with over 10 years of experience in the field.
             Worked for small, medium and big companies. Carry out dozen of
             projects like UI/UX integration, SSO implementation, payment
             integration, API creation.
