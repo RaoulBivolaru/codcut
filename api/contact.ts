@@ -12,6 +12,12 @@ const mailer = nodemailer.createTransport({
 });
 
 export default function (req: Request, res: Response) {
+  console.log('CONTACT REQ BODY: ', req.body);
+
+  if (req.method !== 'POST') {
+    return res.end();
+  }
+
   mailer.sendMail(
     {
       from: req.body.email,
