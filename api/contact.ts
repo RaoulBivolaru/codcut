@@ -27,9 +27,9 @@ const contact = (req: Request, res: Response) => {
 
   mailer.sendMail(
     {
-      from: `${body.name} <${req.body.email}>`,
+      from: `${body.name} <${body.email}>`,
       to: process.env.CONTACT_ADDRESS,
-      subject: req.body.subject,
+      subject: body.subject,
       html: template(body.name, body.message, body.email),
     },
     (err, info) => {
@@ -41,4 +41,4 @@ const contact = (req: Request, res: Response) => {
   );
 };
 
-export default allowCors(contact);
+export default contact;
