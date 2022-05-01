@@ -5,7 +5,6 @@ const mailer = nodemailer.createTransport({
   host: process.env.SMTP_HOST,
   port: 465,
   secure: true,
-  sender: process.env.CONTACT_ADDRESS,
   auth: {
     user: process.env.SMTP_USER,
     pass: process.env.SMTP_PASSWORD,
@@ -21,6 +20,7 @@ export default function (req: Request, res: Response) {
 
   mailer.sendMail(
     {
+      sender: process.env.CONTACT_ADDRESS,
       from: req.body.email,
       to: process.env.CONTACT_ADDRESS,
       subject: req.body.subject,
