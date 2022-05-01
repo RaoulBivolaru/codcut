@@ -34,7 +34,7 @@ const contact = (req: Request, res: Response) => {
     {
       from: {
         name: body.name,
-        address: body.email,
+        address: process.env.CONTACT_ADDRESS || '',
       },
       to: process.env.CONTACT_ADDRESS,
       subject: body.subject,

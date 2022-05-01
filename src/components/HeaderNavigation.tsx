@@ -13,20 +13,20 @@ interface HeaderNavigationItemProps extends NavigationMenuProps {
   label: string;
 }
 
+export const navigateToSection = (id: string) => {
+  const section = document.getElementById(id.toLowerCase());
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 const HeaderNavigationItem = ({
   label,
   mobileView,
 }: HeaderNavigationItemProps) => {
-  const navigate = () => {
-    const section = document.getElementById(label.toLowerCase());
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <a
-      onClick={navigate}
+      onClick={() => navigateToSection(label)}
       className={clsx(
         'hover:text-accent cursor-pointer transition-color after:transition-width after:top-1 after:relative after:w-0 after:h-0.5 after:block after:bg-accent',
         {
@@ -48,7 +48,6 @@ const NavigationMenu = ({ mobileView }: NavigationMenuProps) => {
       })}>
       <HeaderNavigationItem label="Home" mobileView={mobileView} />
       <HeaderNavigationItem label="About" mobileView={mobileView} />
-      <HeaderNavigationItem label="Services" mobileView={mobileView} />
       <HeaderNavigationItem label="Contact" mobileView={mobileView} />
     </nav>
   );
