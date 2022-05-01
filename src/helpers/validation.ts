@@ -1,6 +1,4 @@
-
-   
-import * as Yup from "yup";
+import * as Yup from 'yup';
 
 function setMinMaxValidation(min: number, max: number) {
   return Yup.string().min(min).max(max);
@@ -16,9 +14,9 @@ function setRequired(schema: Yup.AnySchema) {
 
 const VALIDATION_FIELDS = {
   EMAIL: setPattern(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i),
-  NAME: setMinMaxValidation(2, 25),
-  SUBJECT: setMinMaxValidation(2, 50).matches(/^[a-zA-Z0-9_]+$/),
-  MESSAGE: setMinMaxValidation(10, 500)
+  NAME: setMinMaxValidation(2, 25).matches(/^[a-zA-Z ]+$/),
+  SUBJECT: setMinMaxValidation(2, 50).matches(/^[a-zA-Z ]+$/),
+  MESSAGE: setMinMaxValidation(10, 500).matches(/^[a-zA-Z0-9 ]+$/),
 };
 
 export const VALIDATION_SCHEMAS = {
@@ -26,6 +24,6 @@ export const VALIDATION_SCHEMAS = {
     email: setRequired(VALIDATION_FIELDS.EMAIL),
     name: setRequired(VALIDATION_FIELDS.NAME),
     subject: setRequired(VALIDATION_FIELDS.SUBJECT),
-    message: setRequired(VALIDATION_FIELDS.MESSAGE)
+    message: setRequired(VALIDATION_FIELDS.MESSAGE),
   }),
 };

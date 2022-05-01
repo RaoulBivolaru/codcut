@@ -27,13 +27,7 @@ const mailer = nodemailer.createTransport({
 const template = (name: string, message: string) =>
   `<p>From: ${name}</p><p>Message: ${message}</p>`;
 
-export default allowCors(function (req: Request, res: Response) {
-  console.log('CONTACT REQ BODY: ', req.body);
-
-  if (req.method !== 'POST') {
-    return res.end();
-  }
-
+const contact = (req: Request, res: Response) => {
   mailer.sendMail(
     {
       sender: req.body.email,
@@ -49,4 +43,6 @@ export default allowCors(function (req: Request, res: Response) {
       res.json({ success: true });
     },
   );
-});
+};
+
+export default allowCors(contact);
