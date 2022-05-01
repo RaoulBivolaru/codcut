@@ -28,6 +28,8 @@ const template = (name: string, message: string) =>
   `<p>From: ${name}</p><p>Message: ${message}</p>`;
 
 const contact = (req: Request, res: Response) => {
+  console.log('CONTACT REQUEST BODY: ', req.body);
+
   mailer.sendMail(
     {
       sender: req.body.email,
