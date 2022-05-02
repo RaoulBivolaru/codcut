@@ -4,7 +4,7 @@ import ToTop from './ToTop';
 
 export default function ({ children }: PropsWithChildren<any>) {
   return (
-    <div className="bg-brand">
+    <div className="bg-shade container mx-auto relative">
       <Header />
       {children}
       <ToTop />

@@ -23,7 +23,7 @@ export default function ({
       type={isSubmit ? 'submit' : 'button'}
       onClick={!loading ? onClick : undefined}
       className={clsx(
-        'flex items-center transition-all hover:bg-gradient-to-l bg-gradient-to-r from-accent_shade to-accent rounded-md text-white px-5 py-2 md:px-6 md:py-3 uppercase tracking-wider text-sm',
+        'flex items-center transition-all hover:bg-gradient-to-l bg-gradient-to-r from-accent_shade to-accent rounded-md text-white px-5 py-2 lg:px-6 lg:py-3 uppercase tracking-wider text-sm',
         [className],
         {
           'opacity-70': loading,
