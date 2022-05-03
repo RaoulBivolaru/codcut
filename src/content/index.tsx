@@ -24,7 +24,7 @@ const SkillLevel = ({ level }: SkillLevelProps) => {
   return (
     <div
       className={clsx(
-        'h-2 bg-gradient-to-r from-shade to-accent rounded-lg opacity-75 mt-2',
+        'h-2 animate-pulse bg-gradient-to-r from-shade to-accent rounded-lg opacity-75 mt-2',
         [level],
       )}></div>
   );
