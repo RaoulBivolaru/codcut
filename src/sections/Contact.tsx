@@ -29,7 +29,7 @@ export default function () {
   };
 
   return (
-    <section className="p-10 w-full lg:w-9/12" id="contact">
+    <section className="p-10 w-full lg:w-7/12" id="contact">
       <h2 className="text-white text-6xl font-bold tracking-wide mb-5">
         Contact me
       </h2>

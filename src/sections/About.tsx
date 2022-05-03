@@ -8,7 +8,7 @@ export default function () {
         <div className="mt-14 min-w-fit">
           <img src="about.png" alt="about" className="w-full" />
         </div>
-        <div className="py-10 font-light lg:pr-10 text-lg lg:pt-10 w-full">
+        <div className="py-10 font-light text-lg w-full">
           <h2 className="text-white text-6xl font-bold tracking-wide mb-5">
             About me
           </h2>
