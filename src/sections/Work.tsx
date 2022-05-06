@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function () {
   return (
-    <section className="px-10 py-10" id="work">
+    <section className="px-10 py-24" id="work">
       <div className="text-center">
         <h2 className="text-white text-6xl font-bold tracking-wide mb-5 ">
           My Latest Work
