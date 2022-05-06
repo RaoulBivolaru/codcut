@@ -31,7 +31,7 @@ export default function ({ image, title, meta, url }: ProjectProps) {
         />
         <div className="absolute inset-0 bg-shade opacity-20 transition-all hover:opacity-95 bg-gradient-to-b hover:from-accent to-brand"></div>
         <div
-          className="text-center text-white font-heading tracking-wider pb-10 relative px-5"
+          className="transition-all text-center text-white font-heading tracking-wider pb-10 relative px-5 group-hover:pb-40"
           style={{ textShadow: '0 0 5px black' }}>
           <p className="uppercase text-sm mb-2">{meta}</p>
           <h3 className="text-2xl font-bold">{title}</h3>
