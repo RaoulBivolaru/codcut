@@ -48,6 +48,7 @@ const NavigationMenu = ({ mobileView }: NavigationMenuProps) => {
       })}>
       <HeaderNavigationItem label="Home" mobileView={mobileView} />
       <HeaderNavigationItem label="About" mobileView={mobileView} />
+      <HeaderNavigationItem label="Work" mobileView={mobileView} />
       <HeaderNavigationItem label="Contact" mobileView={mobileView} />
     </nav>
   );

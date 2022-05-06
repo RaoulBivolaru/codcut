@@ -5,6 +5,8 @@ module.exports = {
       fontFamily: { sans: 'Poppins', heading: 'Montserrat' },
       transitionProperty: {
         width: 'width',
+        background: 'background',
+        opacity: 'opacity'
       },
     },
     colors: {

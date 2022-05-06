@@ -4,6 +4,7 @@ import Layout from 'components/Layout';
 import React from 'react';
 import Contact from 'sections/Contact';
 import SEO from 'components/SEO';
+import Work from 'sections/Work';
 
 export default function () {
   return (
@@ -11,6 +12,7 @@ export default function () {
       <SEO />
       <Hero />
       <About />
+      <Work />
       <Contact />
     </Layout>
   );
