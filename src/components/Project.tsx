@@ -29,7 +29,7 @@ export default function ({ image, title, meta, url }: ProjectProps) {
           alt={title}
           className="object-cover absolute transition-all group-hover:p-5 inset-0 h-full w-full"
         />
-        <div className="absolute inset-0 bg-shade opacity-20 transition-all hover:opacity-95 bg-gradient-to-b hover:from-accent to-brand"></div>
+        <div className="absolute inset-0 bg-shade opacity-20 transition-all group-hover:opacity-95 bg-gradient-to-b group-hover:from-accent to-brand"></div>
         <div
           className="transition-all text-center text-white font-heading tracking-wider pb-10 relative px-5 group-hover:pb-40"
           style={{ textShadow: '0 0 5px black' }}>
