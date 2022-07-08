@@ -22,7 +22,12 @@ export default function () {
       <ContentItem
         title="Javascript architect"
         meta="IBM"
-        description="2021 - Present"
+        description="2021 - 2022"
+      />
+      <ContentItem
+        title="Fullstack developer"
+        meta="Plan.Net Technology"
+        description="2022 - Present"
       />
       <ContentItem
         title="Owner"
