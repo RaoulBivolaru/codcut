@@ -19,7 +19,7 @@ export default function () {
     setLoading(true);
     try {
       const response = await sendEmail(data);
-      if ('success' in response) {
+      if (response.status === 200) {
         showSuccessAlert('Message sent!', 'Will get back to you right away.');
       }
     } catch (err) {
