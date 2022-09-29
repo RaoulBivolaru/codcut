@@ -25,11 +25,6 @@ export default function () {
         description="2021 - 2022"
       />
       <ContentItem
-        title="Fullstack developer"
-        meta="Plan.Net Technology"
-        description="2022 - Present"
-      />
-      <ContentItem
         title="Owner"
         meta="raoul.tech"
         description="2016 - Present"
