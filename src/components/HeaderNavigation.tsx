@@ -4,6 +4,7 @@ import React from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { useWindowSize } from 'react-use';
 import Drawer from './Drawer';
+import { navigate } from 'gatsby';
 
 interface NavigationMenuProps {
   mobileView?: boolean;
@@ -17,6 +18,10 @@ export const navigateToSection = (id: string) => {
   const section = document.getElementById(id.toLowerCase());
   if (section) {
     section.scrollIntoView({ behavior: 'smooth' });
+  } else if (id === 'Privacy') {
+    navigate('privacy');
+  } else {
+    navigate(`/#${id.toLowerCase()}`);
   }
 };
 
@@ -50,6 +55,7 @@ const NavigationMenu = ({ mobileView }: NavigationMenuProps) => {
       <HeaderNavigationItem label="About" mobileView={mobileView} />
       <HeaderNavigationItem label="Work" mobileView={mobileView} />
       <HeaderNavigationItem label="Contact" mobileView={mobileView} />
+      <HeaderNavigationItem label="Privacy" mobileView={mobileView} />
     </nav>
   );
 };
