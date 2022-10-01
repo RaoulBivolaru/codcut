@@ -385,15 +385,6 @@ export default function () {
         your browser, you will need to do this yourself from within your
         browser, you should visit your browser's help menu for more information.
       </p>
-      <h2 className="text-3xl font-bold text-white mt-10">Kids' Privacy</h2>
-      <p className="text-content">
-        We collect information from kids under the age of 13 just to better our
-        services. If You are a parent or guardian and You are aware that Your
-        child has provided Us with Personal Data without your permission, please
-        contact Us. If We become aware that We have collected Personal Data from
-        anyone under the age of 13 without verification of parental consent, We
-        take steps to remove that information from Our servers.
-      </p>
       <h2 className="text-3xl font-bold text-white mt-10">
         Changes To Our Privacy Policy
       </h2>
