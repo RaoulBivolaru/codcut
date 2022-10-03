@@ -20,10 +20,16 @@ export default function () {
           image="buktio.png"
         />
         <Project
-          title="Browser Game Skyhavoc"
+          title="Browser game Skyhavoc"
           meta="Development"
           url="https://skyhavoc.com"
           image="skyhavoc.png"
+        />
+        <Project
+          title="Mobile app Babinio"
+          meta="Development"
+          url="https://apps.apple.com/us/app/babinio/id6443568887"
+          image="babinio.png"
         />
       </div>
     </section>
