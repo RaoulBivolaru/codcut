@@ -17,19 +17,19 @@ export default function () {
           title="Web application Buktio"
           meta="Development"
           url="https://buktio.com"
-          image="buktio.png"
+          image="/buktio.png"
         />
         <Project
           title="Browser game Skyhavoc"
           meta="Development"
           url="https://skyhavoc.com"
-          image="skyhavoc.png"
+          image="/skyhavoc.png"
         />
         <Project
           title="Mobile app Babinio"
           meta="Development"
           url="https://apps.apple.com/us/app/babinio/id6443568887"
-          image="babinio.png"
+          image="/babinio.png"
         />
       </div>
     </section>
