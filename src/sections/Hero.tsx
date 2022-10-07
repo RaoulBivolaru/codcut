@@ -16,11 +16,13 @@ export default function () {
         <span className="text-white uppercase tracking-widest font-light text-xl mb-1 opacity-80">
           IT services and consulting provider
         </span>
-        <h1 className="text-white font-extrabold text-5xl lg:text-7xl">
-          <span className="mt-2 block">
-            Let's digitise your
-            <br /> business!
-          </span>
+        <h1 className="text-white font-extrabold text-5xl lg:text-6xl">
+          Fullstack IT solutions
+          <br />
+          to <span className="text-accent">evolve</span> your
+          <br />
+          business
+          <span className="text-yellow">.</span>
         </h1>
       </div>
       {y <= 50 && (
