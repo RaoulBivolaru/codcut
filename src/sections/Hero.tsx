@@ -13,13 +13,10 @@ export default function () {
         <img src="/hero-graphic.png" alt="graphic" className="w-9/12 -mt-32" />
       </div>
       <div className="flex w-full flex-col relative">
-        <span className="text-white uppercase tracking-widest font-light text-xl mb-5 opacity-80">
-          Fullstack digital freelancer
+        <span className="text-white uppercase tracking-widest font-light text-xl mb-1 opacity-80">
+          IT services and consulting provider
         </span>
         <h1 className="text-white font-extrabold text-5xl lg:text-7xl">
-          Hello, I'm <span className="text-accent">Raoul</span>
-          <span className="text-yellow">.</span>
-          <br />
           <span className="mt-2 block">
             Let's digitise your
             <br /> business!

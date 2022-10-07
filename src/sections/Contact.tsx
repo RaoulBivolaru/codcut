@@ -31,16 +31,8 @@ export default function () {
   return (
     <section className="p-10 w-full lg:w-7/12" id="contact">
       <h2 className="text-white text-6xl font-bold tracking-wide mb-5">
-        Contact me
+        Contact us
       </h2>
-      <p className="text-content mb-5">
-        I am available for freelance work.
-        <br /> Connect with me via email:{' '}
-        <a href="mailto:contact@raoul.tech" className="text-accent">
-          contact@raoul.tech
-        </a>
-        .
-      </p>
       <Form<ContactProps>
         loading={loading}
         onSubmit={handleSubmit}

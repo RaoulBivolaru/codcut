@@ -10,13 +10,12 @@ export default function () {
         </div>
         <div className="py-10 font-light text-lg w-full">
           <h2 className="text-white text-6xl font-bold tracking-wide mb-5">
-            About me
+            About
           </h2>
           <p className="text-content">
-            Fullstack developer with over 10 years of experience in the field.
-            Worked for small, medium and big companies. Carry out dozen of
-            projects like UI/UX integration, SSO implementation, payment
-            integration, API creation.
+            IT studio with over 10 years of experience in the field. Carry out
+            dozen of projects like UI/UX integration, SSO implementation,
+            payment integration, API creation.
           </p>
           <Skills />
         </div>

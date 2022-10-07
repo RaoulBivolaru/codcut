@@ -1,11 +1,9 @@
-import clsx from 'clsx';
 import React from 'react';
 
 interface ContentItemProps {
   title: string;
   meta: string;
   description?: string;
-  level?: LevelType;
 }
 
 interface SkillLevelProps {
@@ -20,22 +18,7 @@ export enum LevelType {
   EXPERT = 'w-full',
 }
 
-const SkillLevel = ({ level }: SkillLevelProps) => {
-  return (
-    <div
-      className={clsx(
-        'h-2 animate-pulse bg-gradient-to-r from-shade to-accent rounded-lg opacity-75 mt-2',
-        [level],
-      )}></div>
-  );
-};
-
-export const ContentItem = ({
-  title,
-  meta,
-  description,
-  level,
-}: ContentItemProps) => {
+export const ContentItem = ({ title, meta, description }: ContentItemProps) => {
   return (
     <div className="text-content font-extralight text-sm">
       <div className="flex gap-2">
@@ -43,7 +26,6 @@ export const ContentItem = ({
         <span className="text-accent font-normal">{meta}</span>
       </div>
       {description && <p>{description}</p>}
-      {level && <SkillLevel level={level} />}
     </div>
   );
 };

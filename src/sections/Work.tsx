@@ -6,10 +6,10 @@ export default function () {
     <section className="px-10 py-16" id="work">
       <div className="text-center">
         <h2 className="text-white text-6xl font-bold tracking-wide mb-5 ">
-          My Latest Work
+          Work
         </h2>
         <p className="text-content">
-          Checkout my latest projects that I implemented!
+          Check out our latest implemented projects!
         </p>
       </div>
       <div className="flex flex-col lg:flex-row gap-10 items-start justify-between mt-10">

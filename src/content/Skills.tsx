@@ -1,40 +1,31 @@
-import { ContentItem, LevelType } from 'content';
 import React from 'react';
+
+interface SkillItemProps {
+  title: string;
+}
+
+const SkillItem = (props: SkillItemProps) => {
+  return (
+    <div className="text-white p-3 border border-accent rounded-full text-sm">
+      {props.title}
+    </div>
+  );
+};
 
 export default function () {
   return (
-    <>
-      <ContentItem
-        title="Javascript"
-        meta="10 years"
-        level={LevelType.EXPERT}
-      />
-      <ContentItem title="HTML/CSS" meta="10 years" level={LevelType.EXPERT} />
-      <ContentItem title="ReactJS" meta="5 years" level={LevelType.EXPERT} />
-      <ContentItem
-        title="Typescript"
-        meta="5 years"
-        level={LevelType.ADVANCE}
-      />
-      <ContentItem
-        title="Adobe Experience Manager"
-        meta="5 years"
-        level={LevelType.ADVANCE}
-      />
-      <ContentItem title="NodeJS" meta="6 years" level={LevelType.ADVANCE} />
-      <ContentItem title="NextJS" meta="3 years" level={LevelType.ADVANCE} />
-      <ContentItem title="NestJS" meta="2 years" level={LevelType.ADVANCE} />
-      <ContentItem title="Firebase" meta="3 years" level={LevelType.MEDIUM} />
-      <ContentItem
-        title="Adobe Photoshop"
-        meta="5 years"
-        level={LevelType.MEDIUM}
-      />
-      <ContentItem
-        title="React Native"
-        meta="1 years"
-        level={LevelType.INTERMEDIATE}
-      />
-    </>
+    <div className="flex flex-wrap gap-3">
+      <SkillItem title="Javascript" />
+      <SkillItem title="HTML/CSS" />
+      <SkillItem title="ReactJS" />
+      <SkillItem title="Typescript" />
+      <SkillItem title="Adobe Experience Manager" />
+      <SkillItem title="NodeJS" />
+      <SkillItem title="NextJS" />
+      <SkillItem title="NestJS" />
+      <SkillItem title="Firebase" />
+      <SkillItem title="React Native" />
+      <SkillItem title="Figma" />
+    </div>
   );
 }
