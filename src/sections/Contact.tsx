@@ -35,12 +35,7 @@ export default function () {
       </h2>
       <p className="text-content mb-5">
         I am available for freelance work.
-        <br /> Connect with me via phone:
-        <a href="tel:+40743158478" className="text-accent">
-          {' '}
-          +40743158478
-        </a>{' '}
-        or email:{' '}
+        <br /> Connect with me via email:{' '}
         <a href="mailto:contact@raoul.tech" className="text-accent">
           contact@raoul.tech
         </a>
