@@ -24,6 +24,8 @@ export default function () {
       <SkillItem title="NextJS" />
       <SkillItem title="NestJS" />
       <SkillItem title="Firebase" />
+      <SkillItem title="PHP" />
+      <SkillItem title="Laravel" />
       <SkillItem title="React Native" />
       <SkillItem title="Figma" />
     </div>
