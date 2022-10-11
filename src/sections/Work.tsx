@@ -4,7 +4,7 @@ import React from 'react';
 export default function () {
   return (
     <section className="px-10 py-16" id="work">
-      <div className="text-center">
+      <div className="lg:text-center">
         <h2 className="text-white text-6xl font-bold tracking-wide mb-5 ">
           Work
         </h2>
