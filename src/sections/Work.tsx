@@ -14,7 +14,7 @@ export default function () {
       </div>
       <div className="flex flex-col lg:flex-row gap-10 items-start justify-between mt-10">
         <Project
-          title="Web application Buktio"
+          title="Web app Buktio"
           meta="Development"
           url="https://buktio.com"
           image="/buktio.png"

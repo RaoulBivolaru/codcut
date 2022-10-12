@@ -31,7 +31,11 @@ const HeaderNavigationItem = ({
 }: HeaderNavigationItemProps) => {
   return (
     <a
-      onClick={() => navigateToSection(label)}
+      href={label === 'Privacy' ? '/privacy' : `#${label.toLowerCase()}`}
+      onClick={e => {
+        e.preventDefault();
+        navigateToSection(label);
+      }}
       className={clsx(
         'hover:text-accent cursor-pointer transition-color after:transition-width after:top-1 after:relative after:w-0 after:h-0.5 after:block after:bg-accent',
         {
