@@ -35,7 +35,7 @@ module.exports = {
         short_name: 'raoul.tech',
         start_url: '/',
         lang: 'en',
-        icon: '/logo.png',
+        icon: './static/logo.png',
         description: `IT studio with over 10 years of experience in the field. Carry out
         dozen of projects like UI/UX integration, SSO implementation,
         payment integration, API creation.`,
