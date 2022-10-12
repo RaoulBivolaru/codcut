@@ -14,7 +14,7 @@ const SkillMenuItem = ({ label, active, idx, onClick }: SkillMenuItemProps) => {
   const isActive = active === idx;
 
   return (
-    <a
+    <div
       onClick={onClick}
       className={clsx(
         'cursor-pointer transition-all after:transition-width after:w-6/12 after:top-1 after:relative after:h-0.5 after:block ',
@@ -24,7 +24,7 @@ const SkillMenuItem = ({ label, active, idx, onClick }: SkillMenuItemProps) => {
         },
       )}>
       {label}
-    </a>
+    </div>
   );
 };
 
