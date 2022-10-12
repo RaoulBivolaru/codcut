@@ -8,7 +8,10 @@ export default function () {
   } = useStaticQuery(query);
 
   return (
-    <Helmet>
+    <Helmet
+      htmlAttributes={{
+        lang: 'en',
+      }}>
       <title>{meta.title}</title>
       <meta name="author" content={meta.author} />
       <meta name="description" content={meta.description} />
