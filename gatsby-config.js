@@ -66,12 +66,7 @@ module.exports = {
         display: 'swap',
       },
     },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/`, '/privacy'],
-      },
-    },
+    `gatsby-plugin-offline`,
     shouldAnalyseBundle && {
       resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
       options: {
