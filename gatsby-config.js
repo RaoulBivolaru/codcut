@@ -4,15 +4,15 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 module.exports = {
   siteMetadata: {
-    title: `raoul.tech | IT Studio`,
+    title: `codcut | IT Studio`,
     headline: `IT services and consulting provider`,
-    url: `https://raoul.tech`,
-    siteUrl: `https://raoul.tech`,
+    url: `https://codcut.com`,
+    siteUrl: `https://codcut.com`,
     description: `IT studio with over 10 years of experience in the field. Carry out
     dozen of projects like UI/UX integration, SSO implementation,
     payment integration, API creation.`,
     language: `en`,
-    image: `https://raoul.tech/logo.png`,
+    image: `https://codcut.com/logo.png`,
     author: `Raoul Bivolaru`,
   },
   plugins: [
@@ -25,14 +25,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://raoul.tech`,
+        siteUrl: `https://codcut.com`,
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'raoul.tech | IT Studio',
-        short_name: 'raoul.tech',
+        name: 'codcut | IT Studio',
+        short_name: 'codcut',
         start_url: '/',
         lang: 'en',
         icon: './static/logo.png',

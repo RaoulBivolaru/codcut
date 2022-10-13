@@ -1,9 +1,9 @@
 {
   "private": true,
   "name": "raoul-tech",
-  "description": "raoul.tech portfolio",
+  "description": "codcut",
   "version": "0.2.11",
-  "author": "raoul.tech",
+  "author": "codcut",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
