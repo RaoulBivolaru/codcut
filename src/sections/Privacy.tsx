@@ -560,7 +560,7 @@ export default function () {
         Don't hesitate to contact us if you have any questions.
       </p>
       <ul className="list-disc pl-5">
-        <li className="text-content">Via Email: contact@codcut</li>
+        <li className="text-content">Via Email: contact@raoul.tech</li>
       </ul>
     </section>
   );
