@@ -14,7 +14,7 @@ export default function () {
           </h2>
           <p className="text-content">
             With over 10 years of experience in the field, we provide
-            professional services for customer satisfaction. Our strengths:
+            professional services for our customer satisfaction. Our strengths:
             landing websites, ecommerce platforms, UI/UX integration, SSO
             implementation, payment integration, API creation.
           </p>
