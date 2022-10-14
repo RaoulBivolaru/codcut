@@ -4,13 +4,11 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 module.exports = {
   siteMetadata: {
-    title: `codcut | IT Studio`,
-    headline: `IT services and consulting provider`,
+    title: `codcut | Complete IT Services`,
+    headline: `Provider of IT services and consultancy`,
     url: `https://codcut.com`,
     siteUrl: `https://codcut.com`,
-    description: `IT studio with over 10 years of experience in the field. Carry out
-    dozen of projects like UI/UX integration, SSO implementation,
-    payment integration, API creation.`,
+    description: `Provider of IT services: web application, mobile application, API creation, payment integration, eCommerce, Adobe Experience Manager, fullstack development, agile approach, CMS, UI/UX.`,
     language: `en`,
     image: `https://codcut.com/logo.png`,
     author: `Raoul Bivolaru`,
@@ -31,14 +29,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'codcut | IT Studio',
+        name: 'codcut | Complete IT Services',
         short_name: 'codcut',
         start_url: '/',
         lang: 'en',
         icon: './static/logo.png',
-        description: `IT studio with over 10 years of experience in the field. Carry out
-        dozen of projects like UI/UX integration, SSO implementation,
-        payment integration, API creation.`,
+        description: `Provider of IT services: web application, mobile application, API creation, payment integration, eCommerce, Adobe Experience Manager, fullstack development, agile approach, CMS, UI/UX.`,
         icons: [
           {
             src: '/android-chrome-192x192.png',

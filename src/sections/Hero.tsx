@@ -13,15 +13,14 @@ export default function () {
         <img src="/hero-graphic.png" alt="graphic" className="w-9/12 -mt-32" />
       </div>
       <div className="flex w-full flex-col relative">
-        <span className="text-white uppercase tracking-widest font-light text-xl mb-1 opacity-80">
-          IT services and consulting provider
+        <span className="text-white uppercase tracking-widest font-light text-lg lg:text-xl mb-1 opacity-80">
+          Provider of IT services and consultancy
         </span>
-        <h1 className="text-white font-extrabold text-5xl lg:text-6xl">
+        <h1 className="text-white font-extrabold text-4xl lg:text-6xl">
           Fullstack IT solutions
           <br />
           to <span className="text-accent">evolve</span> your
-          <br />
-          business
+          <br className="hidden lg:block" /> business
           <span className="text-yellow">.</span>
         </h1>
       </div>

@@ -22,10 +22,10 @@ export const ContentItem = ({ title, meta, description }: ContentItemProps) => {
   return (
     <div className="text-content font-extralight text-sm">
       <div className="flex gap-2">
-        <strong>{title} - </strong>
+        <strong className="text-white">{title} - </strong>
         <span className="text-accent font-normal">{meta}</span>
       </div>
-      {description && <p>{description}</p>}
+      {description && <p className="font-normal">{description}</p>}
     </div>
   );
 };

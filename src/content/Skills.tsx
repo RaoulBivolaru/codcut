@@ -26,6 +26,7 @@ export default function () {
       <SkillItem title="Firebase" />
       <SkillItem title="PHP" />
       <SkillItem title="Laravel" />
+      <SkillItem title="PostgreSQL" />
       <SkillItem title="React Native" />
       <SkillItem title="Figma" />
     </div>

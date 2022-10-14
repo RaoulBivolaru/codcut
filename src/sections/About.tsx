@@ -13,9 +13,10 @@ export default function () {
             About
           </h2>
           <p className="text-content">
-            IT studio with over 10 years of experience in the field. Carry out
-            dozen of projects like UI/UX integration, SSO implementation,
-            payment integration, API creation.
+            With over 10 years of experience in the field, we provide
+            professional services for customer satisfaction. Our strengths:
+            landing websites, ecommerce platforms, UI/UX integration, SSO
+            implementation, payment integration, API creation.
           </p>
           <Skills />
         </div>
