@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { PropsWithChildren } from 'react';
 import {
   Formik,
   FormikHelpers,
@@ -10,19 +10,14 @@ import Button from './Button';
 
 interface FormProps<P extends FormikValues> {
   loading: boolean;
-  children: ReactNode | ReactNode[];
   initialValues: P;
   validation?: InferType<any>;
   onSubmit: (values: P) => Promise<any>;
 }
 
-export default function <P>({
-  initialValues,
-  children,
-  onSubmit,
-  validation,
-  loading,
-}: FormProps<P>) {
+const Form = <P, >(props: PropsWithChildren<FormProps<P>>) => {
+  const { initialValues, children, onSubmit, validation, loading } = props;
+
   const handleSubmit = async (values: P, helpers: FormikHelpers<P>) => {
     try {
       await onSubmit(values);
@@ -41,7 +36,7 @@ export default function <P>({
         <FormDefault noValidate>
           {children}
           <Button
-            label="Submit"
+            label='Submit'
             onClick={handleSubmit}
             loading={loading}
             isSubmit
@@ -50,4 +45,6 @@ export default function <P>({
       )}
     </Formik>
   );
-}
+};
+
+export default Form;

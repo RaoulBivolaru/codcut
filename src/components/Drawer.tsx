@@ -1,4 +1,4 @@
-import React, { PropsWithChildren, useState } from 'react';
+import React, { FC, PropsWithChildren, useState } from 'react';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { animated, useSpring } from 'react-spring';
 
@@ -6,10 +6,8 @@ interface DrawerProps {
   trigger: React.ReactElement;
 }
 
-export default function ({
-  children,
-  trigger,
-}: PropsWithChildren<DrawerProps>) {
+const Drawer: FC<PropsWithChildren<DrawerProps>> = (props) => {
+  const { children, trigger } = props;
   const [isVisible, setIsVisible] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
 
@@ -35,13 +33,13 @@ export default function ({
       {isAnimating && (
         <>
           <div
-            className="absolute inset-0 opacity-60 bg-brand h-screen"
+            className='absolute inset-0 opacity-60 bg-brand h-screen'
             onClick={() => setIsVisible(false)}></div>
           <animated.section
-            style={animation as any}
-            className="fixed bg-shade top-0 bottom-0 right-0 p-10 w-6/12">
+            style={animation}
+            className='fixed bg-shade top-0 bottom-0 right-0 p-10 w-6/12'>
             <AiOutlineCloseCircle
-              className="text-accent text-2xl top-5 right-5 absolute cursor-pointer"
+              className='text-accent text-2xl top-5 right-5 absolute cursor-pointer'
               onClick={() => setIsVisible(false)}
             />
             {children}
@@ -50,4 +48,6 @@ export default function ({
       )}
     </>
   );
-}
+};
+
+export default Drawer;

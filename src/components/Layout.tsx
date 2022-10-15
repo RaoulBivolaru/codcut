@@ -1,13 +1,15 @@
-import React, { PropsWithChildren } from 'react';
+import React, { FC, PropsWithChildren } from 'react';
 import Header from '../sections/Header';
 import ToTop from './ToTop';
 
-export default function ({ children }: PropsWithChildren<any>) {
+const Layout: FC<PropsWithChildren<any>> = (props) => {
   return (
-    <div className="bg-shade container mx-auto relative">
+    <div className='bg-shade container mx-auto relative'>
       <Header />
-      {children}
+      {props.children}
       <ToTop />
     </div>
   );
-}
+};
+
+export default Layout;

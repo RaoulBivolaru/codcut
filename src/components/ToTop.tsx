@@ -4,7 +4,7 @@ import { useWindowScroll } from 'react-use';
 
 const LIMIT = 200;
 
-export default function () {
+const ToTop = () => {
   const { y } = useWindowScroll();
 
   const handlePress = () => {
@@ -16,9 +16,11 @@ export default function () {
       {y > LIMIT && (
         <FiArrowUpCircle
           onClick={handlePress}
-          className="fixed bottom-5 right-5 cursor-pointer text-4xl text-accent"
+          className='fixed bottom-5 right-5 cursor-pointer text-4xl text-accent'
         />
       )}
     </>
   );
-}
+};
+
+export default ToTop;

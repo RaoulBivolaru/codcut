@@ -53,18 +53,18 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: process.env.G_TRACKING,
+        trackingIds: [process.env.G_TRACKING, process.env.AW_TRACKING],
+        pluginConfig: {
+          head: true,
+        },
       },
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `Poppins\:100,300,400,700,900`,
-          `Montserrat\:100,300,400,700,900`,
-        ],
+        fonts: [`Poppins\:100,300,400,700,900`, `Montserrat\:100,300,400,700,900`],
         display: 'swap',
       },
     },

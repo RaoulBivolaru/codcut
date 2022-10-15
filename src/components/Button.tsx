@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import React from 'react';
+import React, { FC } from 'react';
 import { AiOutlineLoading } from 'react-icons/ai';
 
 interface ButtonProps {
@@ -10,13 +10,9 @@ interface ButtonProps {
   isSubmit?: boolean;
 }
 
-export default function ({
-  label,
-  onClick,
-  className,
-  isSubmit,
-  loading,
-}: ButtonProps) {
+const Button: FC<ButtonProps> = (props) => {
+  const { label, onClick, className, isSubmit, loading } = props;
+
   return (
     <button
       disabled={!!loading}
@@ -29,8 +25,10 @@ export default function ({
           'opacity-70': loading,
         },
       )}>
-      {loading && <AiOutlineLoading className="animate-spin mr-2" />}
+      {loading && <AiOutlineLoading className='animate-spin mr-2' />}
       {label}
     </button>
   );
-}
+};
+
+export default Button;

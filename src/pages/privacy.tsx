@@ -3,7 +3,7 @@ import SEO from 'components/SEO';
 import React from 'react';
 import Privacy from 'sections/Privacy';
 
-export default function () {
+const PrivacyPage = () => {
   return (
     <Layout>
       <SEO />
@@ -11,3 +11,5 @@ export default function () {
     </Layout>
   );
 }
+
+export default PrivacyPage;

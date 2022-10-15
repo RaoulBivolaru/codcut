@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import React from 'react';
+import React, { FC } from 'react';
 
 interface ImageProps {
   src: string;
@@ -9,7 +9,9 @@ interface ImageProps {
   isFull?: boolean;
 }
 
-export default function ({ src, alt, w, h, isFull }: ImageProps) {
+const Image: FC<ImageProps> = (props) => {
+  const { src, alt, w, h, isFull } = props;
+
   return (
     <img
       className={clsx('block object-cover', {
@@ -21,4 +23,6 @@ export default function ({ src, alt, w, h, isFull }: ImageProps) {
       height={h ? `${h}em` : 'auto'}
     />
   );
-}
+};
+
+export default Image;

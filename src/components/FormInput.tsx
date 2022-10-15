@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import { useField } from 'formik';
-import React from 'react';
+import React, { FC } from 'react';
 
 interface InputProps {
   name: string;
@@ -11,11 +11,12 @@ interface InputProps {
 const classes =
   'w-full outline-none bg-brand border-2 border-content rounded-xl px-4 py-3 text-content tracking-wider';
 
-export default function ({ name, label, as }: InputProps) {
-  const [field, meta, helpers] = useField({ name });
+const FormInput: FC<InputProps> = (props) => {
+  const { name, label, as } = props;
+  const [field, meta] = useField({ name });
 
   return (
-    <div className="mb-7 relative">
+    <div className='mb-7 relative'>
       {as !== 'textarea' && (
         <input type={as} {...field} placeholder={label} className={classes} />
       )}
@@ -34,11 +35,13 @@ export default function ({ name, label, as }: InputProps) {
             '-bottom-5': as !== 'textarea',
             '-bottom-4': as === 'textarea',
           })}>
-          <span className="text-xs italic text-accent font-light tracking-wide">
+          <span className='text-xs italic text-accent font-light tracking-wide'>
             {meta.error}
           </span>
         </label>
       )}
     </div>
   );
-}
+};
+
+export default FormInput;

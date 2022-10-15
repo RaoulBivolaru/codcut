@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import { BREAKPOINT } from 'helpers/constants';
-import React from 'react';
+import React, { FC } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { useWindowSize } from 'react-use';
 import Drawer from './Drawer';
@@ -19,16 +19,15 @@ export const navigateToSection = (id: string) => {
   if (section) {
     section.scrollIntoView({ behavior: 'smooth' });
   } else if (id === 'Privacy') {
-    navigate('privacy');
+    void navigate('privacy');
   } else {
-    navigate(`/#${id.toLowerCase()}`);
+    void navigate(`/#${id.toLowerCase()}`);
   }
 };
 
-const HeaderNavigationItem = ({
-  label,
-  mobileView,
-}: HeaderNavigationItemProps) => {
+const HeaderNavigationItem: FC<HeaderNavigationItemProps> = (props) => {
+  const { label, mobileView } = props;
+
   return (
     <a
       href={label === 'Privacy' ? '/privacy' : `#${label.toLowerCase()}`}
@@ -48,23 +47,25 @@ const HeaderNavigationItem = ({
   );
 };
 
-const NavigationMenu = ({ mobileView }: NavigationMenuProps) => {
+const NavigationMenu: FC<NavigationMenuProps> = (props) => {
+  const { mobileView } = props;
+
   return (
     <nav
       className={clsx('text-content flex gap-8', {
         'flex-col': mobileView,
         'items-center ml-16 mr-auto': !mobileView,
       })}>
-      <HeaderNavigationItem label="Home" mobileView={mobileView} />
-      <HeaderNavigationItem label="About" mobileView={mobileView} />
-      <HeaderNavigationItem label="Work" mobileView={mobileView} />
-      <HeaderNavigationItem label="Contact" mobileView={mobileView} />
-      <HeaderNavigationItem label="Privacy" mobileView={mobileView} />
+      <HeaderNavigationItem label='Home' mobileView={mobileView} />
+      <HeaderNavigationItem label='About' mobileView={mobileView} />
+      <HeaderNavigationItem label='Work' mobileView={mobileView} />
+      <HeaderNavigationItem label='Contact' mobileView={mobileView} />
+      <HeaderNavigationItem label='Privacy' mobileView={mobileView} />
     </nav>
   );
 };
 
-export default function () {
+const HeaderNavigation = () => {
   const { width } = useWindowSize();
 
   if (width > BREAKPOINT.MOBILE) {
@@ -73,9 +74,11 @@ export default function () {
   return (
     <Drawer
       trigger={
-        <AiOutlineMenu className="text-white order-2 ml-5 text-2xl cursor-pointer" />
+        <AiOutlineMenu className='text-white order-2 ml-5 text-2xl cursor-pointer' />
       }>
       <NavigationMenu mobileView />
     </Drawer>
   );
-}
+};
+
+export default HeaderNavigation;

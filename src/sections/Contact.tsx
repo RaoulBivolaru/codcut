@@ -12,6 +12,12 @@ interface ContactProps {
   message: string;
 }
 
+declare global {
+  interface Window {
+    gtag: any;
+  }
+}
+
 export default function () {
   const [loading, setLoading] = useState(false);
 
@@ -20,6 +26,7 @@ export default function () {
     try {
       const response = await sendEmail(data);
       if (response.status === 200) {
+        window.gtag('event', 'conversion', { send_to: `${process.env.AW_TRACKING}/${process.env.GTAG_CONVERSION}` });
         showSuccessAlert('Message sent!', 'Will get back to you right away.');
       }
     } catch (err) {
@@ -30,9 +37,7 @@ export default function () {
 
   return (
     <section className="p-10 w-full lg:w-7/12" id="contact">
-      <h2 className="text-white text-6xl font-bold tracking-wide mb-5">
-        Contact
-      </h2>
+      <h2 className="text-white text-6xl font-bold tracking-wide mb-5">Contact</h2>
       <Form<ContactProps>
         loading={loading}
         onSubmit={handleSubmit}

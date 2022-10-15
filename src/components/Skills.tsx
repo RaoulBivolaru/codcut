@@ -1,7 +1,7 @@
 import clsx from 'clsx';
-import Services from 'content/Services';
-import Skills from 'content/Skills';
-import React, { useState } from 'react';
+import ServicesContent from 'content/ServicesContent';
+import SkillsContent from 'content/SkillsContent';
+import React, { FC, useState } from 'react';
 
 interface SkillMenuItemProps {
   label: string;
@@ -10,7 +10,8 @@ interface SkillMenuItemProps {
   idx: number;
 }
 
-const SkillMenuItem = ({ label, active, idx, onClick }: SkillMenuItemProps) => {
+const SkillMenuItem: FC<SkillMenuItemProps> = (props) => {
+  const { label, active, idx, onClick } = props;
   const isActive = active === idx;
 
   return (
@@ -28,29 +29,31 @@ const SkillMenuItem = ({ label, active, idx, onClick }: SkillMenuItemProps) => {
   );
 };
 
-export default function () {
+const Skills = () => {
   const [active, setActive] = useState(0);
 
   return (
     <>
-      <nav className="flex align-middle gap-8 text-white mt-2 w-full flex-wrap">
+      <nav className='flex align-middle gap-8 text-white mt-2 w-full flex-wrap'>
         <SkillMenuItem
           idx={0}
           active={active}
-          label="Services provided"
+          label='Services provided'
           onClick={() => setActive(0)}
         />
         <SkillMenuItem
           idx={1}
           active={active}
-          label="Skills"
+          label='Skills'
           onClick={() => setActive(1)}
         />
       </nav>
-      <div className="flex flex-col gap-5 mt-8">
-        {active === 0 && <Services />}
-        {active === 1 && <Skills />}
+      <div className='flex flex-col gap-5 mt-8'>
+        {active === 0 && <ServicesContent />}
+        {active === 1 && <SkillsContent />}
       </div>
     </>
   );
-}
+};
+
+export default Skills;

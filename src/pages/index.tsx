@@ -6,7 +6,7 @@ import Contact from 'sections/Contact';
 import SEO from 'components/SEO';
 import Work from 'sections/Work';
 
-export default function () {
+const HomePage = () => {
   return (
     <Layout>
       <SEO />
@@ -16,4 +16,6 @@ export default function () {
       <Contact />
     </Layout>
   );
-}
+};
+
+export default HomePage;
