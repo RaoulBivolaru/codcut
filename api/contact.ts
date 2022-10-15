@@ -5,10 +5,7 @@ const allowCors = (fn: any) => async (req: Request, res: Response) => {
   res.setHeader('Access-Control-Allow-Origin', req.headers.origin || '');
   res.setHeader('Access-Control-Allow-Methods', 'POST');
 
-  res.setHeader(
-    'Access-Control-Allow-Headers',
-    'Accept, Content-Length, Content-Type',
-  );
+  res.setHeader('Access-Control-Allow-Headers', 'Accept, Content-Length, Content-Type');
 
   return await fn(req, res);
 };
@@ -31,24 +28,26 @@ const contact = (req: Request, res: Response) => {
     const data = JSON.parse(req.body);
     console.log('CONTACT REQUEST BODY: ', data);
 
-    mailer.sendMail(
-      {
-        from: {
-          name: data.name,
-          address: process.env.VISITOR_ADDRESS || '',
+    if (data.message.length >= 10 && data.message.length <= 800) {
+      mailer.sendMail(
+        {
+          from: {
+            name: data.name,
+            address: process.env.VISITOR_ADDRESS || '',
+          },
+          to: process.env.CONTACT_ADDRESS,
+          subject: data.subject,
+          html: template(data.name, data.message, data.email),
+          replyTo: data.email,
         },
-        to: process.env.CONTACT_ADDRESS,
-        subject: data.subject,
-        html: template(data.name, data.message, data.email),
-        replyTo: data.email,
-      },
-      err => {
-        if (err) {
-          return res.status(500).send(err);
+        err => {
+          if (err) {
+            return res.status(500).send(err);
+          }
+          res.json({ success: true });
         }
-        res.json({ success: true });
-      },
-    );
+      );
+    }
   } catch (err) {
     return res.status(500).send(err);
   }
