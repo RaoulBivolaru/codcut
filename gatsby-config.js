@@ -8,7 +8,7 @@ module.exports = {
     headline: `Provider of IT services and consultancy`,
     url: `https://codcut.com`,
     siteUrl: `https://codcut.com`,
-    description: `Provider of IT services: web application, mobile application, API creation, payment integration, eCommerce, Adobe Experience Manager, fullstack development, agile approach, CMS, UI/UX.`,
+    description: `Provider of IT services: web application, mobile application, API creation, payment integration, eCommerce, Adobe Experience Manager, fullstack web development, agile approach, CMS, UI/UX.`,
     language: `en`,
     image: `https://codcut.com/logo.png`,
     author: `Raoul Bivolaru`,
@@ -21,9 +21,6 @@ module.exports = {
         pluginConfig: {
           head: true,
           respectDNT: true,
-        },
-        gtagConfig: {
-          send_page_view: true,
         },
       },
     },
@@ -47,7 +44,7 @@ module.exports = {
         start_url: '/',
         lang: 'en',
         icon: './static/logo.png',
-        description: `Provider of IT services: web application, mobile application, API creation, payment integration, eCommerce, Adobe Experience Manager, fullstack development, agile approach, CMS, UI/UX.`,
+        description: `Provider of IT services: web application, mobile application, API creation, payment integration, eCommerce, Adobe Experience Manager, fullstack web development, agile approach, CMS, UI/UX.`,
         icons: [
           {
             src: '/android-chrome-192x192.png',
