@@ -39,7 +39,7 @@ export default function () {
     <section id="contact" className="bg-gray">
       <div className="container mx-auto">
         <div className="lg:w-7/12 p-10">
-          <h2 className="text-white text-6xl font-bold tracking-wide mb-5">Contact</h2>
+          <h2 className="text-white text-4xl lg:text-5xl font-bold tracking-wide mb-5">Contact</h2>
           <Form<ContactProps>
             loading={loading}
             onSubmit={handleSubmit}

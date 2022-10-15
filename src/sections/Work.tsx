@@ -5,7 +5,7 @@ export default function () {
   return (
     <section className="px-10 py-24 container mx-auto" id="work">
       <div className="lg:text-center">
-        <h2 className="text-white text-6xl font-bold tracking-wide mb-5 ">Work</h2>
+        <h2 className="text-white text-4xl lg:text-5xl font-bold tracking-wide">Work</h2>
         <p className="text-content">Check out our latest implemented projects!</p>
       </div>
       <div className="flex flex-col lg:flex-row gap-10 items-start justify-between mt-10">
