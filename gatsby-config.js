@@ -14,6 +14,19 @@ module.exports = {
     author: `Raoul Bivolaru`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [process.env.G_MEASUREMENT, process.env.AW_TRACKING],
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+        },
+        gtagConfig: {
+          send_page_view: true,
+        },
+      },
+    },
     `gatsby-plugin-tsconfig-paths`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-gatsby-cloud`,
@@ -50,15 +63,6 @@ module.exports = {
         theme_color: '#f9004d',
         background_color: '#101010',
         display: 'standalone',
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [process.env.G_TRACKING, process.env.AW_TRACKING],
-        pluginConfig: {
-          head: true,
-        },
       },
     },
     {
