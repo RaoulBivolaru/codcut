@@ -6,11 +6,12 @@ module.exports = {
       transitionProperty: {
         width: 'width',
         background: 'background',
-        opacity: 'opacity'
+        opacity: 'opacity',
       },
     },
     colors: {
       brand: '#101010',
+      gray: '#272727',
       shade: '#191919',
       accent: '#f9004d',
       accent_shade: '#EB4242',
@@ -20,5 +21,6 @@ module.exports = {
       yellow: '#DBBF2D',
     },
   },
+  variants: {},
   plugins: [],
 };

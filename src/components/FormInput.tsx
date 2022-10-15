@@ -35,9 +35,9 @@ const FormInput: FC<InputProps> = (props) => {
             '-bottom-5': as !== 'textarea',
             '-bottom-4': as === 'textarea',
           })}>
-          <span className='text-xs italic text-accent font-light tracking-wide'>
+          <p className='text-sm italic text-accent tracking-wide first-letter:uppercase'>
             {meta.error}
-          </span>
+          </p>
         </label>
       )}
     </div>

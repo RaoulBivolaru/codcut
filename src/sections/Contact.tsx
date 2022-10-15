@@ -36,18 +36,22 @@ export default function () {
   };
 
   return (
-    <section className="p-10 w-full lg:w-7/12" id="contact">
-      <h2 className="text-white text-6xl font-bold tracking-wide mb-5">Contact</h2>
-      <Form<ContactProps>
-        loading={loading}
-        onSubmit={handleSubmit}
-        validation={VALIDATION_SCHEMAS.CONTACT}
-        initialValues={{ name: '', email: '', subject: '', message: '' }}>
-        <FormInput name="name" label="Name" as="text" />
-        <FormInput name="email" label="Email" as="email" />
-        <FormInput name="subject" label="Subject" as="text" />
-        <FormInput name="message" label="Message" as="textarea" />
-      </Form>
+    <section id="contact" className="bg-gray">
+      <div className="container mx-auto">
+        <div className="lg:w-7/12 p-10">
+          <h2 className="text-white text-6xl font-bold tracking-wide mb-5">Contact</h2>
+          <Form<ContactProps>
+            loading={loading}
+            onSubmit={handleSubmit}
+            validation={VALIDATION_SCHEMAS.CONTACT}
+            initialValues={{ name: '', email: '', subject: '', message: '' }}>
+            <FormInput name="name" label="Name" as="text" />
+            <FormInput name="email" label="Email" as="email" />
+            <FormInput name="subject" label="Subject" as="text" />
+            <FormInput name="message" label="How can we help?" as="textarea" />
+          </Form>
+        </div>
+      </div>
     </section>
   );
 }

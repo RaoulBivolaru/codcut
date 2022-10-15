@@ -5,6 +5,7 @@ import React from 'react';
 import Contact from 'sections/Contact';
 import SEO from 'components/SEO';
 import Work from 'sections/Work';
+import Services from 'sections/Services';
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <SEO />
       <Hero />
       <About />
+      <Services />
       <Work />
       <Contact />
     </Layout>
