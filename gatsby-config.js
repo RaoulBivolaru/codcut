@@ -17,7 +17,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds: [process.env.G_MEASUREMENT, process.env.AW_TRACKING],
+        trackingIds: [process.env.GATSBY_G_MEASUREMENT, process.env.GATSBY_AW_TRACKING],
         pluginConfig: {
           head: true,
           respectDNT: true,
