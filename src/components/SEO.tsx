@@ -34,7 +34,7 @@ const SEO = () => {
       <meta property="og:image" content={meta.image} />
       <meta property="og:url" content={meta.url} />
       <meta property="og:site_name" content={meta.title} />
-      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     </Helmet>
   );
 };
