@@ -27,7 +27,6 @@ module.exports = {
     `gatsby-plugin-tsconfig-paths`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-gatsby-cloud`,
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-sitemap`,
     {

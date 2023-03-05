@@ -1,6 +1,5 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-import { Helmet } from 'react-helmet';
 
 const query = graphql`
   query SEO {
@@ -23,10 +22,8 @@ const SEO = () => {
   } = useStaticQuery(query);
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang: 'en',
-      }}>
+    <>
+      <html lang="en" />
       <title>{meta.title}</title>
       <meta name="author" content={meta.author} />
       <meta name="description" content={meta.description} />
@@ -35,7 +32,7 @@ const SEO = () => {
       <meta property="og:url" content={meta.url} />
       <meta property="og:site_name" content={meta.title} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    </Helmet>
+    </>
   );
 };
 

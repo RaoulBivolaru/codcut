@@ -10,7 +10,6 @@ import Services from 'sections/Services';
 const HomePage = () => {
   return (
     <Layout>
-      <SEO />
       <Hero />
       <About />
       <Services />
@@ -21,3 +20,7 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+export const Head = () => {
+  return <SEO />;
+};
