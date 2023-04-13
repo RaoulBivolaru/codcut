@@ -1,8 +1,8 @@
+import { GatsbyConfig } from 'gatsby';
+
 require(`dotenv`).config();
 
-const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
-
-module.exports = {
+const config: GatsbyConfig = {
   siteMetadata: {
     title: `codcut | Complete IT Services`,
     headline: `Provider of IT services and consultancy`,
@@ -13,6 +13,7 @@ module.exports = {
     image: `https://codcut.com/logo.png`,
     author: `Raoul Bivolaru`,
   },
+  trailingSlash: `never`,
   plugins: [
     {
       resolve: `gatsby-plugin-google-gtag`,
@@ -26,7 +27,6 @@ module.exports = {
     },
     `gatsby-plugin-tsconfig-paths`,
     `gatsby-plugin-postcss`,
-    `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-sitemap`,
     {
@@ -69,13 +69,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-    shouldAnalyseBundle && {
-      resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
-      options: {
-        analyzerMode: `static`,
-        reportFilename: `_bundle.html`,
-        openAnalyzer: false,
-      },
-    },
-  ].filter(Boolean),
+  ],
 };
+
+export default config;

@@ -1,10 +1,5 @@
 import React, { PropsWithChildren } from 'react';
-import {
-  Formik,
-  FormikHelpers,
-  Form as FormDefault,
-  FormikValues,
-} from 'formik';
+import { Formik, FormikHelpers, Form as FormDefault, FormikValues } from 'formik';
 import { InferType } from 'yup';
 import Button from './Button';
 
@@ -15,7 +10,7 @@ interface FormProps<P extends FormikValues> {
   onSubmit: (values: P) => Promise<any>;
 }
 
-const Form = <P, >(props: PropsWithChildren<FormProps<P>>) => {
+const Form = <P extends FormikValues>(props: PropsWithChildren<FormProps<P>>) => {
   const { initialValues, children, onSubmit, validation, loading } = props;
 
   const handleSubmit = async (values: P, helpers: FormikHelpers<P>) => {
@@ -28,19 +23,11 @@ const Form = <P, >(props: PropsWithChildren<FormProps<P>>) => {
   };
 
   return (
-    <Formik<P>
-      initialValues={initialValues}
-      onSubmit={handleSubmit}
-      validationSchema={validation}>
+    <Formik<P> initialValues={initialValues} onSubmit={handleSubmit} validationSchema={validation}>
       {({ handleSubmit }) => (
         <FormDefault noValidate>
           {children}
-          <Button
-            label='Submit'
-            onClick={handleSubmit}
-            loading={loading}
-            isSubmit
-          />
+          <Button label="Submit" onClick={handleSubmit} loading={loading} isSubmit />
         </FormDefault>
       )}
     </Formik>

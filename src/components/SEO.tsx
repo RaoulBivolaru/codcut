@@ -1,25 +1,27 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 
-const query = graphql`
-  query SEO {
-    site {
-      siteMetadata {
-        title
-        description
-        url
-        image
-        author
-        headline
+export const useSiteMetadata = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+          url
+          image
+          author
+          headline
+        }
       }
     }
-  }
-`;
+  `);
+
+  return data.site.siteMetadata;
+};
 
 const SEO = () => {
-  const {
-    site: { siteMetadata: meta },
-  } = useStaticQuery(query);
+  const meta = useSiteMetadata();
 
   return (
     <>

@@ -6,6 +6,7 @@ import Contact from 'sections/Contact';
 import SEO from 'components/SEO';
 import Work from 'sections/Work';
 import Services from 'sections/Services';
+import { HeadFC } from 'gatsby';
 
 const HomePage = () => {
   return (
@@ -21,6 +22,4 @@ const HomePage = () => {
 
 export default HomePage;
 
-export const Head = () => {
-  return <SEO />;
-};
+export const Head: HeadFC = () => <SEO />;
