@@ -1,24 +1,5 @@
-import { graphql, useStaticQuery } from 'gatsby';
+import useSiteMetadata from 'helpers/hooks/useSiteMetadata';
 import React from 'react';
-
-export const useSiteMetadata = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-          description
-          url
-          image
-          author
-          headline
-        }
-      }
-    }
-  `);
-
-  return data.site.siteMetadata;
-};
 
 const SEO = () => {
   const meta = useSiteMetadata();

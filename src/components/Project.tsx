@@ -1,6 +1,6 @@
 import { BREAKPOINT } from 'helpers/constants';
+import useWindowSize from 'helpers/hooks/useWindowSize';
 import React, { FC } from 'react';
-import { useWindowSize } from 'react-use';
 
 interface ProjectProps {
   image: string;

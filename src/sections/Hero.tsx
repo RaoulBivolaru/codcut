@@ -1,6 +1,6 @@
+import useWindowScroll from 'helpers/hooks/useWindowScroll';
 import React from 'react';
 import { HiOutlineChevronDoubleDown } from 'react-icons/hi';
-import { useWindowScroll } from 'react-use';
 
 export default function () {
   const { y } = useWindowScroll();
