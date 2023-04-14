@@ -14,16 +14,16 @@ export enum LevelType {
   EXPERT = 'w-full',
 }
 
-const ContentItem: FC<ContentItemProps> = (props) => {
+const ContentItem: FC<ContentItemProps> = props => {
   const { title, meta, description } = props;
 
   return (
-    <div className='text-content font-extralight text-sm'>
-      <div className='flex gap-2'>
-        <strong className='text-white'>{title} - </strong>
-        <span className='text-accent font-normal'>{meta}</span>
+    <div className="text-content font-extralight text-md">
+      <div className="flex gap-2">
+        <strong className="text-white">{title} - </strong>
+        <span className="text-accent font-normal">{meta}</span>
       </div>
-      {description && <p className='font-normal'>{description}</p>}
+      {description && <p className="font-normal text-sm">{description}</p>}
     </div>
   );
 };

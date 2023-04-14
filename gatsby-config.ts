@@ -43,7 +43,7 @@ const config: GatsbyConfig = {
         start_url: '/',
         lang: 'en',
         icon: './static/logo.png',
-        description: `Provider of IT services: web application, mobile application, API creation, payment integration, eCommerce, Adobe Experience Manager, fullstack web development, agile approach, CMS, UI/UX.`,
+        description: `Provider of IT services: web application, mobile application, API creation, payment integration, SAAS, eCommerce, Adobe Experience Manager, fullstack web development, agile approach, CMS, UI/UX.`,
         icons: [
           {
             src: '/android-chrome-192x192.png',

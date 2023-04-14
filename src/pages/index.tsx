@@ -7,10 +7,12 @@ import SEO from 'components/SEO';
 import Work from 'sections/Work';
 import Services from 'sections/Services';
 import { HeadFC } from 'gatsby';
+import HeroBlob from 'components/HeroBlob';
 
 const HomePage = () => {
   return (
     <Layout>
+      <HeroBlob />
       <Hero />
       <About />
       <Services />

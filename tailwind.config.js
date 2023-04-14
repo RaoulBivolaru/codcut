@@ -8,6 +8,9 @@ module.exports = {
         background: 'background',
         opacity: 'opacity',
       },
+      backgroundImage: {
+        hero: "url('/codcut-banner.png')",
+      },
     },
     colors: {
       brand: '#101010',

@@ -8,10 +8,11 @@ interface ButtonProps {
   className?: string;
   loading?: boolean;
   isSubmit?: boolean;
+  ghost?: boolean;
 }
 
-const Button: FC<ButtonProps> = (props) => {
-  const { label, onClick, className, isSubmit, loading } = props;
+const Button: FC<ButtonProps> = props => {
+  const { label, onClick, className, isSubmit, loading, ghost } = props;
 
   return (
     <button
@@ -19,13 +20,14 @@ const Button: FC<ButtonProps> = (props) => {
       type={isSubmit ? 'submit' : 'button'}
       onClick={!loading ? onClick : undefined}
       className={clsx(
-        'flex items-center transition-all hover:bg-gradient-to-l bg-gradient-to-r from-accent_shade to-accent rounded-md text-white px-5 py-2 lg:px-6 lg:py-3 uppercase tracking-wider text-sm',
+        'flex items-center transition-all hover:bg-gradient-to-l from-accent_shade to-accent bg-gradient-to-r rounded-md text-white px-5 py-2 lg:px-6 lg:py-3 uppercase tracking-wider text-sm',
         [className],
         {
+          'lg:from-gray lg:to-brand': ghost,
           'opacity-70': loading,
-        },
+        }
       )}>
-      {loading && <AiOutlineLoading className='animate-spin mr-2' />}
+      {loading && <AiOutlineLoading className="animate-spin mr-2" />}
       {label}
     </button>
   );

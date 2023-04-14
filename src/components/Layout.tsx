@@ -6,7 +6,7 @@ import 'styles/global.css';
 
 const Layout: FC<PropsWithChildren<any>> = props => {
   return (
-    <div className="bg-shade mx-auto relative">
+    <div className="bg-shade mx-auto relative overflow-hidden">
       <Header />
       {props.children}
       <ToTop />

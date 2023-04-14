@@ -1,5 +1,6 @@
 import Form from 'components/Form';
 import FormInput from 'components/FormInput';
+import SectionTitle from 'components/SectionTitle';
 import { showSuccessAlert } from 'helpers/alert';
 import { sendEmail } from 'helpers/email';
 import { VALIDATION_SCHEMAS } from 'helpers/validation';
@@ -41,7 +42,9 @@ export default function () {
     <section id="contact" className="bg-gray">
       <div className="container mx-auto">
         <div className="lg:w-7/12 p-10">
-          <h2 className="text-white text-4xl lg:text-5xl font-bold tracking-wide mb-5">Contact</h2>
+          <SectionTitle meta="Tell us what you need and will get back to you as soon as possible.">
+            Contact
+          </SectionTitle>
           <Form<ContactProps>
             loading={loading}
             onSubmit={handleSubmit}

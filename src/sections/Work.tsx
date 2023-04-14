@@ -1,13 +1,11 @@
 import Project from 'components/Project';
+import SectionTitle from 'components/SectionTitle';
 import React from 'react';
 
 export default function () {
   return (
-    <section className="px-10 py-24 container mx-auto" id="work">
-      <div className="lg:text-center">
-        <h2 className="text-white text-4xl lg:text-5xl font-bold tracking-wide">Work</h2>
-        <p className="text-content">Check out our latest implemented projects!</p>
-      </div>
+    <section className="px-10 py-24 container mx-auto lg:text-center" id="work">
+      <SectionTitle meta="Check out our latest implemented projects!">Work</SectionTitle>
       <div className="flex flex-col md:grid grid-cols-3 gap-10 items-start mt-10">
         <Project title="Web app Buktio" meta="Development" url="https://buktio.com" image="/buktio.png" />
         <Project title="Browser game Skyhavoc" meta="Development" url="https://skyhavoc.com" image="/skyhavoc.png" />
