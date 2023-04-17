@@ -397,7 +397,7 @@ export default function () {
       <h2 className="text-3xl font-bold text-white mt-10">Contact Us</h2>
       <p className="text-content">Don't hesitate to contact us if you have any questions.</p>
       <ul className="list-disc pl-5">
-        <li className="text-content">Via Email: contact@raoul.tech</li>
+        <li className="text-content">Via Email: contact@codcut.com</li>
       </ul>
     </section>
   );
