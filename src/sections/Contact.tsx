@@ -27,7 +27,7 @@ export default function () {
     try {
       const response = await sendEmail(data);
       if (response.status === 200) {
-        showSuccessAlert('Message sent!', 'Will get back to you right away.');
+        showSuccessAlert('Message sent!', 'Please wait until we review your request.');
         window.gtag('event', 'conversion', {
           send_to: `${process.env.GATSBY_AW_TRACKING}/${process.env.GATSBY_GTAG_CONVERSION}`,
         });
