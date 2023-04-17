@@ -1,7 +1,6 @@
-import { Request, Response } from 'express';
 import nodemailer from 'nodemailer';
 
-const allowCors = (fn: any) => async (req: Request, res: Response) => {
+const allowCors = fn => async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', req.headers.origin || '');
   res.setHeader('Access-Control-Allow-Methods', 'POST');
 
@@ -20,10 +19,9 @@ const mailer = nodemailer.createTransport({
   },
 });
 
-const template = (name: string, message: string, email: string) =>
-  `<p>From: ${name}</p><p>Email: ${email}</p><p>Message: ${message}</p>`;
+const template = (name, message, email) => `<p>From: ${name}</p><p>Email: ${email}</p><p>Message: ${message}</p>`;
 
-const contact = (req: Request, res: Response) => {
+const contact = (req, res) => {
   try {
     const data = JSON.parse(req.body);
     console.log('CONTACT REQUEST BODY: ', data);
