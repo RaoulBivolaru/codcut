@@ -21,7 +21,6 @@ const config: GatsbyConfig = {
         trackingIds: [process.env.GATSBY_G_MEASUREMENT, process.env.GATSBY_AW_TRACKING],
         pluginConfig: {
           head: true,
-          respectDNT: true,
         },
       },
     },
