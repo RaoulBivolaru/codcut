@@ -13,6 +13,9 @@ const SEO = () => {
       <meta property="og:title" content={meta.headline} />
       <meta property="og:image" content={meta.image} />
       <meta property="og:url" content={meta.url} />
+      <meta property="og:type" content="website" />
+      <meta property="og:descrition" content={meta.description} />
+      <meta property="og:locale" content="en" />
       <meta property="og:site_name" content={meta.title} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       <script type="application/ld+json">
