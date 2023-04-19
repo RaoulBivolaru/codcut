@@ -8,7 +8,7 @@ const config: GatsbyConfig = {
     headline: `Provider of IT services and consultancy`,
     url: `https://codcut.com`,
     siteUrl: `https://codcut.com`,
-    description: `Provider of IT services, web application, mobile app, API creation, payment integration, eCommerce, Adobe Experience Manager, fullstack, agile approach, CMS, UI/UX.`,
+    description: `Provider of IT services, web application, mobile app, API creation, payment integration, eCommerce, Adobe Experience Manager, fullstack, agile, CMS, UI/UX.`,
     language: `en`,
     image: `https://codcut.com/logo.png`,
     author: `Raoul Bivolaru`,
@@ -42,7 +42,7 @@ const config: GatsbyConfig = {
         start_url: '/',
         lang: 'en',
         icon: './static/logo.png',
-        description: `Provider of IT services, web application, mobile app, API creation, payment integration, eCommerce, Adobe Experience Manager, fullstack, agile approach, CMS, UI/UX.`,
+        description: `Provider of IT services, web application, mobile app, API creation, payment integration, eCommerce, Adobe Experience Manager, fullstack, agile, CMS, UI/UX.`,
         icons: [
           {
             src: '/android-chrome-192x192.png',
