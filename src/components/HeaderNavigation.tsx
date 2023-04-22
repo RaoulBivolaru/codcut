@@ -12,34 +12,36 @@ interface NavigationMenuProps {
 
 interface HeaderNavigationItemProps extends NavigationMenuProps {
   label: string;
+  withUnderline?: boolean;
+  url?: string;
 }
 
-export const navigateToSection = (id: string) => {
+export const navigateToSection = (id: string, url?: string) => {
   const section = document.getElementById(id.toLowerCase());
-  if (section) {
+  if (url) {
+    void navigate(url);
+  } else if (section) {
     section.scrollIntoView({ behavior: 'smooth' });
-  } else if (id === 'Privacy') {
-    void navigate('privacy');
   } else {
     void navigate(`/#${id.toLowerCase()}`);
   }
 };
 
-const HeaderNavigationItem: FC<HeaderNavigationItemProps> = props => {
-  const { label, mobileView } = props;
+export const HeaderNavigationItem: FC<HeaderNavigationItemProps> = props => {
+  const { label, mobileView, url, withUnderline = true } = props;
 
   return (
     <a
       href={label === 'Privacy' ? '/privacy' : `#${label.toLowerCase()}`}
       onClick={e => {
         e.preventDefault();
-        navigateToSection(label);
+        navigateToSection(label, url);
       }}
       className={clsx(
-        'hover:text-accent cursor-pointer transition-color after:transition-width after:top-1 after:relative after:w-0 after:h-0.5 after:block after:bg-accent',
+        'text-white hover:text-accent cursor-pointer transition-color after:transition-width after:top-1 after:relative after:w-0 after:h-0.5 after:block after:bg-accent',
         {
-          'after:hover:w-10/12': !mobileView,
-          'after:hover:w-full': mobileView,
+          'after:hover:w-10/12': withUnderline && !mobileView,
+          'after:hover:w-full': withUnderline && mobileView,
         }
       )}>
       {label}
@@ -59,8 +61,8 @@ const NavigationMenu: FC<NavigationMenuProps> = props => {
       <HeaderNavigationItem label="Home" mobileView={mobileView} />
       <HeaderNavigationItem label="About" mobileView={mobileView} />
       <HeaderNavigationItem label="Work" mobileView={mobileView} />
-      <HeaderNavigationItem label="Contact" mobileView={mobileView} />
-      <HeaderNavigationItem label="Privacy" mobileView={mobileView} />
+      <HeaderNavigationItem label="Contact" url="/contact" mobileView={mobileView} />
+      <HeaderNavigationItem label="Privacy" url="/privacy" mobileView={mobileView} />
     </nav>
   );
 };

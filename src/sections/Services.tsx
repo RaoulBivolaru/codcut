@@ -15,10 +15,10 @@ const ServiceItem: FC<ServiceItemProps> = props => {
   const { title, icon } = props;
 
   return (
-    <div className="py-10 px-6 text-white flex gap-10 flex-col items-center flex-grow text-xl lg:text-2xl rounded-xl text-center w-full from-brand to-gray bg-gradient-to-b">
-      <span className="bg-accent rounded-[10rem] p-4">
+    <div className="py-10 px-6 text-white flex gap-10 flex-col items-center flex-grow text-xl lg:text-2xl rounded-3xl text-center w-full from-brand to-gray bg-gradient-to-b border-2 border-accent">
+      <span className="bg-gradient-to-br from-accent to-accent_shade rounded-[10rem] p-5">
         {React.cloneElement(icon, {
-          size: 70,
+          size: 55,
         })}
       </span>
       <h3 className="font-bold tracking-wider">{title}</h3>
@@ -36,7 +36,7 @@ export default () => {
             <div className="flex flex-col md:grid grid-cols-3 gap-10 justify-between">
               <ServiceItem title="Web Development" icon={<CgWebsite />} />
               <ServiceItem title="Mobile Development" icon={<AiOutlineMobile />} />
-              <ServiceItem title="User Experience & Design" icon={<MdOutlineDesignServices />} />
+              <ServiceItem title="UX & Design" icon={<MdOutlineDesignServices />} />
               <ServiceItem title="AEM Development" icon={<SiAdobe />} />
               <ServiceItem title="Payment Solutions" icon={<RiSecurePaymentLine />} />
               <ServiceItem title="API Integration" icon={<AiOutlineApi />} />

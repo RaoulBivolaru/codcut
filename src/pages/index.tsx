@@ -14,9 +14,9 @@ const HomePage = () => {
     <Layout>
       <HeroBlob />
       <Hero />
+      <Work />
       <About />
       <Services />
-      <Work />
       <Contact />
     </Layout>
   );
