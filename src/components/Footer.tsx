@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="p-10 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Image src="/icon.svg" alt="logo" w={30} />
-            <p className="text-content pt-1">{YEAR} All rights reserved.</p>
+            <p className="text-content pt-1 leading-none">{YEAR} All rights reserved.</p>
           </div>
           <div>
             <HeaderNavigationItem label="Privacy" withUnderline={false} />
