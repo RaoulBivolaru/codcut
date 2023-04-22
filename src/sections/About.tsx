@@ -25,7 +25,7 @@ const AboutItem = (props: AboutItemProps) => {
 
 export default () => {
   return (
-    <section className="px-10 pb-10 lg:pb-20 container mx-auto" id="about">
+    <section className="px-10 pb-10 lg:pt-20 lg:pb-20 container mx-auto" id="about">
       <div className="lg:text-center mt-20 lg:mt-0">
         <SectionTitle meta="Discover our comprehensive IT solutions">About</SectionTitle>
       </div>

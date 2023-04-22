@@ -29,7 +29,7 @@ const ServiceItem: FC<ServiceItemProps> = props => {
 export default () => {
   return (
     <section className="bg-gray" id="services">
-      <div className="px-10 py-10 container mx-auto">
+      <div className="px-10 container mx-auto">
         <div className="flex lg:gap-10 justify-start items-start flex-col">
           <div className="py-10 font-light text-lg w-full lg:text-center">
             <SectionTitle>IT Services & Solutions</SectionTitle>
