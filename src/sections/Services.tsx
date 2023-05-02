@@ -32,7 +32,7 @@ export default () => {
       <div className="px-10 container mx-auto">
         <div className="flex lg:gap-10 justify-start items-start flex-col">
           <div className="py-10 font-light text-lg w-full lg:text-center">
-            <SectionTitle>IT Services & Solutions</SectionTitle>
+            <SectionTitle>Services & Solutions</SectionTitle>
             <div className="flex flex-col md:grid grid-cols-3 gap-10 justify-between">
               <ServiceItem title="Web Development" icon={<CgWebsite />} />
               <ServiceItem title="Mobile Development" icon={<AiOutlineMobile />} />

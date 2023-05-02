@@ -5,7 +5,7 @@ import React from 'react';
 export default function () {
   return (
     <section className="px-10 pt-24 container mx-auto lg:text-center" id="work">
-      <SectionTitle meta="Check out our latest implemented projects!">Work</SectionTitle>
+      <SectionTitle meta="Latest implemented projects.">Work</SectionTitle>
       <div className="flex flex-col md:grid grid-cols-3 gap-10 items-start mt-10">
         <Project title="Web app Buktio" meta="Development" url="https://buktio.com" image="/buktio.png" />
         <Project title="Browser game Skyhavoc" meta="Development" url="https://skyhavoc.com" image="/skyhavoc.png" />

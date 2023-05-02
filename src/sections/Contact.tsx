@@ -27,7 +27,7 @@ export default function () {
     try {
       const response = await sendEmail(data);
       if (response.status === 200) {
-        showSuccessAlert('Message sent!', 'Please wait until we review your request.');
+        showSuccessAlert('Message sent!', 'Please wait until your request is reviewed.');
         window.gtag('event', 'conversion', {
           send_to: `${process.env.GATSBY_AW_TRACKING}/${process.env.GATSBY_GTAG_CONVERSION}`,
         });
@@ -42,9 +42,7 @@ export default function () {
     <section id="contact" className="bg-gray">
       <div className="container mx-auto">
         <div className="lg:w-7/12 p-10">
-          <SectionTitle meta="Tell us what you need and will get back to you as soon as possible.">
-            Contact
-          </SectionTitle>
+          <SectionTitle meta="Let's discuss business!">Contact</SectionTitle>
           <Form<ContactProps>
             loading={loading}
             onSubmit={handleSubmit}
@@ -53,7 +51,7 @@ export default function () {
             <FormInput name="name" label="Name" as="text" />
             <FormInput name="email" label="Email" as="email" />
             <FormInput name="subject" label="Subject" as="text" />
-            <FormInput name="message" label="How can we help?" as="textarea" />
+            <FormInput name="message" label="Message..." as="textarea" />
           </Form>
         </div>
       </div>

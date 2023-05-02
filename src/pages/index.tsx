@@ -5,7 +5,6 @@ import React from 'react';
 import Contact from 'sections/Contact';
 import SEO from 'components/SEO';
 import Work from 'sections/Work';
-import Services from 'sections/Services';
 import { HeadFC } from 'gatsby';
 import HeroBlob from 'components/HeroBlob';
 
@@ -16,7 +15,6 @@ const HomePage = () => {
       <Hero />
       <Work />
       <About />
-      <Services />
       <Contact />
     </Layout>
   );
