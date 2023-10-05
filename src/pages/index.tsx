@@ -13,8 +13,8 @@ const HomePage = () => {
     <Layout>
       <HeroBlob />
       <Hero />
-      <Work />
       <About />
+      <Work />
       <Contact />
     </Layout>
   );
