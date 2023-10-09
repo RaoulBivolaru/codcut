@@ -25,8 +25,8 @@ const AboutItem = (props: AboutItemProps) => {
 
 export default () => {
   return (
-    <section className="px-10 pb-10 lg:pt-20 lg:pb-20 container mx-auto" id="about">
-      <div className="lg:text-center mt-20 lg:mt-0">
+    <section className="px-10 pb-10 lg:pt-20 lg:pb-20 bg-white" id="about">
+      <div className="lg:text-center pt-10 lg:pt-0">
         <SectionTitle meta="Comprehensive IT solutions.">About</SectionTitle>
       </div>
       <div className="text-content mb-5 flex flex-col gap-14 max-w-[60rem] mx-auto">

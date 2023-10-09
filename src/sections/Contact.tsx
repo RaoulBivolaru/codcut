@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import Form from 'components/Form';
 import FormInput from 'components/FormInput';
 import SectionTitle from 'components/SectionTitle';
@@ -22,6 +23,8 @@ declare global {
 export default function () {
   const [loading, setLoading] = useState(false);
 
+  const isContact = typeof window !== 'undefined' && window.location.pathname.includes('/contact');
+
   const handleSubmit = async (data: ContactProps) => {
     setLoading(true);
     try {
@@ -39,21 +42,23 @@ export default function () {
   };
 
   return (
-    <section id="contact" className="bg-gray">
-      <div className="container mx-auto">
-        <div className="lg:w-7/12 p-10">
-          <SectionTitle meta="Let's discuss business!">Contact</SectionTitle>
-          <Form<ContactProps>
-            loading={loading}
-            onSubmit={handleSubmit}
-            validation={VALIDATION_SCHEMAS.CONTACT}
-            initialValues={{ name: '', email: '', subject: '', message: '' }}>
-            <FormInput name="name" label="Name" as="text" />
-            <FormInput name="email" label="Email" as="email" />
-            <FormInput name="subject" label="Subject" as="text" />
-            <FormInput name="message" label="Message..." as="textarea" />
-          </Form>
-        </div>
+    <section id="contact" className="bg-white flex flex-grow">
+      <div
+        className={clsx('py-10 lg:py-14', {
+          'mx-auto text-center border-t w-full px-10 md:w-6/12 xl:w-4/12': !isContact,
+          'w-full': isContact,
+        })}>
+        <SectionTitle meta="Let's discuss business!">Contact</SectionTitle>
+        <Form<ContactProps>
+          loading={loading}
+          onSubmit={handleSubmit}
+          validation={VALIDATION_SCHEMAS.CONTACT}
+          initialValues={{ name: '', email: '', subject: '', message: '' }}>
+          <FormInput name="name" label="Name" as="text" />
+          <FormInput name="email" label="Email" as="email" />
+          <FormInput name="subject" label="Subject" as="text" />
+          <FormInput name="message" label="Message..." as="textarea" />
+        </Form>
       </div>
     </section>
   );

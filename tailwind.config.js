@@ -7,6 +7,7 @@ module.exports = {
         width: 'width',
         background: 'background',
         opacity: 'opacity',
+        height: 'height',
       },
     },
     colors: {
@@ -16,7 +17,7 @@ module.exports = {
       shade: '#191919',
       accent: '#DB1DFB',
       accent_shade: '#6583EB',
-      content: '#a1a1a1',
+      content: '#818181',
       border: '#5d5d5d',
       white: '#ffffff',
       black: '#000000',

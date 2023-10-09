@@ -1,10 +1,10 @@
+import Drawer from './Drawer';
 import clsx from 'clsx';
+import { navigate } from 'gatsby';
 import { BREAKPOINT } from 'helpers/constants';
+import useWindowSize from 'helpers/hooks/useWindowSize';
 import React, { FC } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
-import Drawer from './Drawer';
-import { navigate } from 'gatsby';
-import useWindowSize from 'helpers/hooks/useWindowSize';
 
 interface NavigationMenuProps {
   mobileView?: boolean;
@@ -62,7 +62,6 @@ const NavigationMenu: FC<NavigationMenuProps> = props => {
       <HeaderNavigationItem label="About" mobileView={mobileView} />
       <HeaderNavigationItem label="Work" mobileView={mobileView} />
       <HeaderNavigationItem label="Contact" url="/contact" mobileView={mobileView} />
-      <HeaderNavigationItem label="Privacy" url="/privacy" mobileView={mobileView} />
     </nav>
   );
 };

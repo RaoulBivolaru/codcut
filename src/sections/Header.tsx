@@ -1,15 +1,24 @@
-import React from 'react';
-import Button from 'components/Button';
+import clsx from 'clsx';
 import HeaderNavigation from 'components/HeaderNavigation';
 import Image from 'components/Image';
-import { navigate } from 'gatsby';
+import Link from 'components/Link';
+import { Link as NativeLink } from 'gatsby';
+import React from 'react';
 
 export default function () {
+  const isContact = typeof window !== 'undefined' && window.location.pathname.includes('/contact');
+
   return (
-    <header className="p-10 flex justify-between items-center absolute right-0 left-0 top-0 z-10 container mx-auto">
-      <Image src="/logo.svg" alt="logo" w={120} onClick={() => navigate('/')} />
+    <header
+      className={clsx('py-5 px-10 flex justify-between items-center right-0 left-0 top-0 z-10 container mx-auto', {
+        sticky: isContact,
+        absolute: !isContact,
+      })}>
+      <NativeLink to="/">
+        <Image src="/logo.svg" alt="logo" w={120} />
+      </NativeLink>
       <HeaderNavigation />
-      <Button label="Let's Talk" onClick={() => navigate('/contact')} className="ml-auto" />
+      {!isContact && <Link label="Let's Talk" to="/contact" className="ml-auto" />}
     </header>
   );
 }

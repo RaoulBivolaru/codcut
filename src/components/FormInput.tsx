@@ -8,18 +8,15 @@ interface InputProps {
   as: 'text' | 'email' | 'textarea';
 }
 
-const classes =
-  'w-full outline-none bg-brand border-2 border-content rounded-xl px-4 py-3 text-content tracking-wider';
+const classes = 'w-full outline-none border-2 border-content rounded-xl px-4 py-3 text-brand tracking-wider';
 
-const FormInput: FC<InputProps> = (props) => {
+const FormInput: FC<InputProps> = props => {
   const { name, label, as } = props;
   const [field, meta] = useField({ name });
 
   return (
-    <div className='mb-7 relative'>
-      {as !== 'textarea' && (
-        <input type={as} {...field} placeholder={label} className={classes} />
-      )}
+    <div className="mb-7 relative">
+      {as !== 'textarea' && <input type={as} {...field} placeholder={label} className={classes} />}
       {as === 'textarea' && (
         <textarea
           {...field}
@@ -35,9 +32,7 @@ const FormInput: FC<InputProps> = (props) => {
             '-bottom-5': as !== 'textarea',
             '-bottom-4': as === 'textarea',
           })}>
-          <p className='text-sm italic text-accent tracking-wide first-letter:uppercase'>
-            {meta.error}
-          </p>
+          <p className="text-sm italic text-accent tracking-wide first-letter:uppercase">{meta.error}</p>
         </label>
       )}
     </div>

@@ -16,13 +16,15 @@ const Project: FC<ProjectProps> = props => {
   const imagePath = width <= BREAKPOINT.SMALLER_MOBILE ? image.replace('.png', '-mobile.png') : image;
 
   return (
-    <a href={url} rel="nofollow" target="_blank" className="w-full rounded-xl transition-all group">
+    <a
+      href={url}
+      rel="nofollow"
+      target="_blank"
+      className="w-full rounded-xl transition-all group shadow-lg border border-gray/10">
       <article className="w-full h-96 relative flex justify-center items-end rounded-xl overflow-hidden">
         <img src={imagePath} alt={title} className="object-cover absolute transition-all inset-0 h-full w-full" />
-        <div className="absolute inset-0 bg-shade opacity-20 transition-all group-hover:opacity-90"></div>
-        <div
-          className="transition-all text-center text-white font-heading tracking-wider pb-10 relative px-5 group-hover:pb-40"
-          style={{ textShadow: '0 0 5px black' }}>
+        <div className="absolute inset-0 bg-gradient-to-t from-shade/10 to-transparent transition-all group-hover:bg-shade/20"></div>
+        <div className="transition-height text-center text-white h-24 font-heading tracking-wider relative px-5 group-hover:h-full w-full backdrop-blur-sm bg-shade/30 flex flex-col justify-center">
           <p className="uppercase text-sm mb-2">{meta}</p>
           <h3 className="text-2xl font-bold">{title}</h3>
         </div>

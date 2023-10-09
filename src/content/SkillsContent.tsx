@@ -5,7 +5,11 @@ interface SkillItemProps {
 }
 
 const SkillItem: FC<SkillItemProps> = props => {
-  return <div className="text-white py-2 px-7 border border-accent rounded-full text-md">{props.title}</div>;
+  return (
+    <div className="text-brand py-2 px-7 border-2 border-accent rounded-full text-md font-bold tracking-wider">
+      {props.title}
+    </div>
+  );
 };
 
 const SkillsContent = () => {
