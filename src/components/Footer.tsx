@@ -14,7 +14,7 @@ const Footer = () => {
             <p className="text-content pt-1 leading-none">{YEAR} All rights reserved.</p>
           </div>
           <div>
-            <HeaderNavigationItem label="Privacy" withUnderline={false} />
+            <HeaderNavigationItem label="Privacy" url="/privacy" withUnderline={false} />
             <a
               className="text-content text-xs italic underline leading-1 block"
               href="https://www.flaticon.com/free-icons/seo-and-web"

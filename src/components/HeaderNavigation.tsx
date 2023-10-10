@@ -13,18 +13,18 @@ interface NavigationMenuProps {
 interface HeaderNavigationItemProps extends NavigationMenuProps {
   label: string;
   withUnderline?: boolean;
-  url?: string;
+  url: string;
 }
 
-export const navigateToSection = (id: string, url?: string) => {
-  const section = document.getElementById(id.toLowerCase());
-  if (url) {
-    void navigate(url);
-  } else if (section) {
-    section.scrollIntoView({ behavior: 'smooth' });
-  } else {
-    void navigate(`/#${id.toLowerCase()}`);
+export const navigateToSection = (id: string, url: string) => {
+  if (url.includes('#')) {
+    const section = document.getElementById(id.toLowerCase().replace('#', ''));
+    if (section) {
+      return section.scrollIntoView({ behavior: 'smooth' });
+    }
   }
+
+  void navigate(url);
 };
 
 export const HeaderNavigationItem: FC<HeaderNavigationItemProps> = props => {
@@ -32,7 +32,7 @@ export const HeaderNavigationItem: FC<HeaderNavigationItemProps> = props => {
 
   return (
     <a
-      href={label === 'Privacy' ? '/privacy' : `#${label.toLowerCase()}`}
+      href={url}
       onClick={e => {
         e.preventDefault();
         navigateToSection(label, url);
@@ -58,9 +58,9 @@ const NavigationMenu: FC<NavigationMenuProps> = props => {
         'flex-col': mobileView,
         'items-center ml-16 mr-auto': !mobileView,
       })}>
-      <HeaderNavigationItem label="Home" mobileView={mobileView} />
-      <HeaderNavigationItem label="About" mobileView={mobileView} />
-      <HeaderNavigationItem label="Work" mobileView={mobileView} />
+      <HeaderNavigationItem label="Home" url="/" mobileView={mobileView} />
+      <HeaderNavigationItem label="About" url="#about" mobileView={mobileView} />
+      <HeaderNavigationItem label="Work" url="#work" mobileView={mobileView} />
       <HeaderNavigationItem label="Contact" url="/contact" mobileView={mobileView} />
     </nav>
   );

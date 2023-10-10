@@ -44,9 +44,9 @@ export default function () {
   return (
     <section id="contact" className="bg-white flex flex-grow">
       <div
-        className={clsx('py-10 lg:py-14', {
-          'mx-auto text-center border-t w-full px-10 md:w-6/12 xl:w-4/12': !isContact,
-          'w-full': isContact,
+        className={clsx('py-10', {
+          'mx-auto text-center border-t w-full px-10 md:w-6/12 xl:w-4/12 lg:py-14': !isContact,
+          'w-full lg:pt-10 lg:pb-5': isContact,
         })}>
         <SectionTitle meta="Let's discuss business!">Contact</SectionTitle>
         <Form<ContactProps>
