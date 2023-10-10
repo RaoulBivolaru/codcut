@@ -58,7 +58,6 @@ const NavigationMenu: FC<NavigationMenuProps> = props => {
         'flex-col': mobileView,
         'items-center ml-16 mr-auto': !mobileView,
       })}>
-      <HeaderNavigationItem label="Home" url="/" mobileView={mobileView} />
       <HeaderNavigationItem label="About" url="#about" mobileView={mobileView} />
       <HeaderNavigationItem label="Work" url="#work" mobileView={mobileView} />
       <HeaderNavigationItem label="Contact" url="/contact" mobileView={mobileView} />
