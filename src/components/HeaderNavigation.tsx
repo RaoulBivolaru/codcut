@@ -17,8 +17,8 @@ interface HeaderNavigationItemProps extends NavigationMenuProps {
 }
 
 export const navigateToSection = (id: string, url: string) => {
-  if (url.includes('#')) {
-    const section = document.getElementById(id.toLowerCase().replace('#', ''));
+  if (url.includes('/#')) {
+    const section = document.getElementById(id.toLowerCase().replace('/#', ''));
     if (section) {
       return section.scrollIntoView({ behavior: 'smooth' });
     }
@@ -58,8 +58,8 @@ const NavigationMenu: FC<NavigationMenuProps> = props => {
         'flex-col': mobileView,
         'items-center ml-16 mr-auto': !mobileView,
       })}>
-      <HeaderNavigationItem label="About" url="#about" mobileView={mobileView} />
-      <HeaderNavigationItem label="Work" url="#work" mobileView={mobileView} />
+      <HeaderNavigationItem label="About" url="/#about" mobileView={mobileView} />
+      <HeaderNavigationItem label="Work" url="/#work" mobileView={mobileView} />
       <HeaderNavigationItem label="Contact" url="/contact" mobileView={mobileView} />
     </nav>
   );
