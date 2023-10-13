@@ -62,6 +62,23 @@ const config: GatsbyConfig = {
         display: 'standalone',
       },
     },
+    {
+      resolve: `gatsby-omni-font-loader`,
+      options: {
+        mode: 'async',
+        preconnect: ['https://fonts.gstatic.com'],
+        web: [
+          {
+            name: 'Poppins',
+            file: 'https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900',
+          },
+          {
+            name: 'Montserrat',
+            file: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900',
+          },
+        ],
+      },
+    },
     `gatsby-plugin-offline`,
   ],
 };
