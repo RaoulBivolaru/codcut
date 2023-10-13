@@ -62,13 +62,6 @@ const config: GatsbyConfig = {
         display: 'standalone',
       },
     },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`Poppins\:100,300,400,700,900`, `Montserrat\:100,300,400,700,900`],
-        display: 'swap',
-      },
-    },
     `gatsby-plugin-offline`,
   ],
 };

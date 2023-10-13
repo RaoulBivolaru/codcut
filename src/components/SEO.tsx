@@ -18,6 +18,12 @@ const SEO = () => {
       <meta property="og:locale" content="en" />
       <meta property="og:site_name" content={meta.title} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+      <link rel="DNS-prefetch" href="//fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&amp;family=Montserrat:wght@100;300;400;700;900&amp;display=swap"
+        rel="stylesheet"
+      />
       <script type="application/ld+json">
         {`
                 {
