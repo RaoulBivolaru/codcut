@@ -24,6 +24,8 @@ const config: GatsbyConfig = {
         },
       },
     },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-tsconfig-paths`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-robots-txt`,
