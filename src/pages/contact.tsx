@@ -65,11 +65,3 @@ const ContactPage = () => {
 export default ContactPage;
 
 export const Head: HeadFC = () => <SEO />;
-
-export async function getServerData() {
-  return {
-    headers: {
-      'Cache-Control': 'public, max-age=10, s-maxage=60, stale-while-revalidate=240',
-    },
-  };
-}
