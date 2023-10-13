@@ -14,7 +14,11 @@ const AboutItem = (props: AboutItemProps) => {
 
   return (
     <div className="flex-col flex lg:flex-row items-center gap-10">
-      <img src={img} alt={title} className={clsx('max-w-sm rounded-2xl w-full lg:w-auto', { 'lg:order-2': onRight })} />
+      <img
+        src={img}
+        alt={title}
+        className={clsx('px-14 lg:px-0 max-w-sm rounded-2xl w-full lg:w-auto', { 'lg:order-2': onRight })}
+      />
       <div>
         <h3 className="text-2xl text-accent font-bold tracking-wide uppercase mb-2">{title}</h3>
         <p className="text-lg">{content}</p>
