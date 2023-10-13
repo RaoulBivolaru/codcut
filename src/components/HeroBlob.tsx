@@ -7,6 +7,7 @@ const HeroBlob = () => {
       <StaticImage
         src="../../static/codcut-banner-professional.png"
         alt="graphic"
+        width={1900}
         className="absolute top-[-10rem] left-0 rotate-[45deg]"
       />
     </div>
