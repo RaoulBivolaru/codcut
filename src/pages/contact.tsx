@@ -20,12 +20,12 @@ const ContactItem = (props: ContactItemProps) => {
       {React.cloneElement(icon, { className: 'text-accent text-4xl' })}
       {!asPhone && !asEmail && <span className="text-white">{label}</span>}
       {asPhone && (
-        <a className="text-white" href={`tel:${label}`}>
+        <a className="text-white" href={`tel:${label}`} title={label}>
           {label}
         </a>
       )}
       {asEmail && (
-        <a className="text-white" href={`mailto:${label}`}>
+        <a className="text-white" href={`mailto:${label}`} title={label}>
           {label}
         </a>
       )}

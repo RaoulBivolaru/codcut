@@ -33,6 +33,7 @@ export const HeaderNavigationItem: FC<HeaderNavigationItemProps> = props => {
   return (
     <a
       href={url}
+      title={label}
       onClick={e => {
         e.preventDefault();
         navigateToSection(label, url);

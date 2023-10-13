@@ -55,7 +55,7 @@ const config: GatsbyConfig = {
             type: 'image/png',
           },
         ],
-        theme_color: '#101010',
+        theme_color: '#191919',
         background_color: '#ffffff',
         display: 'standalone',
       },
