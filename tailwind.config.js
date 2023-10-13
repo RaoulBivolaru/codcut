@@ -9,6 +9,9 @@ module.exports = {
         opacity: 'opacity',
         height: 'height',
       },
+      fontSize: {
+        '6xl': ['60px', '4rem'],
+      },
     },
     colors: {
       transparent: 'transparent',
