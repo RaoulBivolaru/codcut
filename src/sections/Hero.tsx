@@ -15,7 +15,7 @@ export default function () {
         </span>
         <h1 className="text-white font-extrabold text-2xl lg:text-6xl">
           Crafting tailored IT solutions
-          <br /> to
+          <br /> to{' '}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent_shade">
             amplify
           </span>{' '}
