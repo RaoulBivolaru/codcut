@@ -1,11 +1,13 @@
+import LanguageSwitch from '../components/LanguageSwitch';
 import clsx from 'clsx';
 import HeaderNavigation from 'components/HeaderNavigation';
 import Image from 'components/Image';
 import Link from 'components/Link';
-import { Link as NativeLink } from 'gatsby';
+import { Link as NativeLink, useIntl } from 'gatsby-plugin-intl';
 import React from 'react';
 
 export default function () {
+  const intl = useIntl();
   const isContact = typeof window !== 'undefined' && window.location.pathname.includes('/contact');
 
   return (
@@ -18,7 +20,8 @@ export default function () {
         <Image src="/logo.svg" alt="logo" w={120} />
       </NativeLink>
       <HeaderNavigation />
-      {!isContact && <Link label="Let's Talk" to="/contact" className="ml-auto" />}
+      <LanguageSwitch />
+      {!isContact && <Link label={intl.formatMessage({ id: 'lets_talk' })} to="/contact" />}
     </header>
   );
 }

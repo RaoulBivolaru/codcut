@@ -1,8 +1,10 @@
 import Image from 'components/Image';
+import { useIntl } from 'gatsby-plugin-intl';
 import useWindowScroll from 'helpers/hooks/useWindowScroll';
 import React from 'react';
 
 export default function () {
+  const intl = useIntl();
   const { y } = useWindowScroll();
 
   return (
@@ -11,20 +13,19 @@ export default function () {
       id="home">
       <div className="flex w-full flex-col relative">
         <span className="text-white uppercase tracking-widest font-light text-xs lg:text-xl mb-1 opacity-50">
-          Transforming ideas into digital reality
+          {intl.formatMessage({ id: 'hero_1' })}
         </span>
         <h1 className="text-white font-extrabold text-2xl lg:text-6xl">
-          Crafting tailored IT solutions
-          <br /> to{' '}
+          {intl.formatMessage({ id: 'hero_2' })}
+          <br /> {intl.formatMessage({ id: 'to' })}{' '}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent_shade">
-            amplify
+            {intl.formatMessage({ id: 'amplify' })}
           </span>{' '}
-          your digital presence
+          {intl.formatMessage({ id: 'hero_3' })}
           <span className="bg-clip-text text-transparent bg-gradient-to-br from-accent to-accent_shade ml-1">.</span>
         </h1>
         <p className="text-white mt-5 text-xs lg:text-lg font-light tracking-wide opacity-50">
-          From ideation to launch, I provide end-to-end web development services to elevate your brand's online
-          presence.
+          {intl.formatMessage({ id: 'hero_4' })}
         </p>
       </div>
       {y <= 50 && (

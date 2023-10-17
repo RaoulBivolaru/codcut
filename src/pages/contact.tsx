@@ -1,6 +1,5 @@
 import Layout from 'components/Layout';
-import SEO from 'components/SEO';
-import { HeadFC } from 'gatsby';
+import { useIntl } from 'gatsby-plugin-intl';
 import React from 'react';
 import { FiPhone, FiMail, FiClock, FiMapPin } from 'react-icons/fi';
 import Contact from 'sections/Contact';
@@ -34,20 +33,19 @@ const ContactItem = (props: ContactItemProps) => {
 };
 
 const ContactPage = () => {
+  const intl = useIntl();
+
   return (
     <Layout className="flex flex-col">
       <div className="bg-white flex flex-grow">
         <div className="flex px-10 xl:px-56 container mx-auto relative gap-10 mb-auto flex-col lg:flex-row">
           <div className="flex flex-col">
             <Contact />
-            <p className="text-content text-left">
-              Interested in working together? Awesome! Fill the above form with your name, email, and some details about
-              your project. The more you can share, the better I can tailor my services to fit your needs.
-            </p>
+            <p className="text-content text-left">{intl.formatMessage({ id: 'contact_1' })}</p>
           </div>
           <div className="p-10 xl:p-14 bg-shade lg:w-4/12 lg:mt-10 mb-10">
             <h3 className="text-white text-2xl lg:text-3xl font-bold tracking-wide border-b-2 border-accent inline-flex mb-10">
-              Info
+              {intl.formatMessage({ id: 'info' })}
             </h3>
             <div className="flex flex-col gap-10">
               <ContactItem label="contact@codcut.com" icon={<FiMail />} asEmail />
@@ -63,5 +61,3 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
-
-export const Head: HeadFC = () => <SEO />;

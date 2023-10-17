@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { Link as NativeLink } from 'gatsby';
+import { Link as NativeLink } from 'gatsby-plugin-intl';
 import React, { FC } from 'react';
 import { AiOutlineLoading } from 'react-icons/ai';
 

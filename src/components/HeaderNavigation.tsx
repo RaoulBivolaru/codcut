@@ -1,6 +1,7 @@
 import Drawer from './Drawer';
 import clsx from 'clsx';
 import { navigate } from 'gatsby';
+import { Link, useIntl } from 'gatsby-plugin-intl';
 import { BREAKPOINT } from 'helpers/constants';
 import useWindowSize from 'helpers/hooks/useWindowSize';
 import React, { FC } from 'react';
@@ -31,13 +32,9 @@ export const HeaderNavigationItem: FC<HeaderNavigationItemProps> = props => {
   const { label, mobileView, url, withUnderline = true } = props;
 
   return (
-    <a
-      href={url}
+    <Link
+      to={url}
       title={label}
-      onClick={e => {
-        e.preventDefault();
-        navigateToSection(label, url);
-      }}
       className={clsx(
         'text-white hover:text-accent cursor-pointer transition-color after:transition-width after:top-1 after:relative after:w-0 after:h-0.5 after:block after:bg-accent',
         {
@@ -46,12 +43,13 @@ export const HeaderNavigationItem: FC<HeaderNavigationItemProps> = props => {
         }
       )}>
       {label}
-    </a>
+    </Link>
   );
 };
 
 const NavigationMenu: FC<NavigationMenuProps> = props => {
   const { mobileView } = props;
+  const intl = useIntl();
 
   return (
     <nav
@@ -59,9 +57,9 @@ const NavigationMenu: FC<NavigationMenuProps> = props => {
         'flex-col': mobileView,
         'items-center ml-16 mr-auto': !mobileView,
       })}>
-      <HeaderNavigationItem label="About" url="/#about" mobileView={mobileView} />
-      <HeaderNavigationItem label="Work" url="/#work" mobileView={mobileView} />
-      <HeaderNavigationItem label="Contact" url="/contact" mobileView={mobileView} />
+      <HeaderNavigationItem label={intl.formatMessage({ id: 'about' })} url="/#about" mobileView={mobileView} />
+      <HeaderNavigationItem label={intl.formatMessage({ id: 'work' })} url="/#work" mobileView={mobileView} />
+      <HeaderNavigationItem label={intl.formatMessage({ id: 'contact' })} url="/contact" mobileView={mobileView} />
     </nav>
   );
 };

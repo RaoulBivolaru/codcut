@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import Form from 'components/Form';
 import FormInput from 'components/FormInput';
 import SectionTitle from 'components/SectionTitle';
+import { useIntl } from 'gatsby-plugin-intl';
 import { showSuccessAlert } from 'helpers/alert';
 import { sendEmail } from 'helpers/email';
 import { VALIDATION_SCHEMAS } from 'helpers/validation';
@@ -21,6 +22,7 @@ declare global {
 }
 
 export default function () {
+  const intl = useIntl();
   const [loading, setLoading] = useState(false);
 
   const isContact = typeof window !== 'undefined' && window.location.pathname.includes('/contact');
@@ -30,7 +32,10 @@ export default function () {
     try {
       const response = await sendEmail(data);
       if (response.status === 200) {
-        showSuccessAlert('Message sent!', 'Please wait until your request is reviewed.');
+        showSuccessAlert(
+          intl.formatMessage({ id: 'message_sent' }),
+          intl.formatMessage({ id: 'contact_confirmation' })
+        );
         window.gtag('event', 'conversion', {
           send_to: `${process.env.GATSBY_AW_TRACKING}/${process.env.GATSBY_GTAG_CONVERSION}`,
         });
@@ -48,18 +53,18 @@ export default function () {
           'mx-auto lg:text-center border-t w-full px-10 md:w-6/12 xl:w-4/12 lg:py-14': !isContact,
           'w-full lg:pt-10 lg:pb-5': isContact,
         })}>
-        <SectionTitle meta="Have an app idea? or want to expand your business online? Let's talk!">
-          Contact
+        <SectionTitle meta={intl.formatMessage({ id: 'contact_2' })}>
+          {intl.formatMessage({ id: 'contact' })}
         </SectionTitle>
         <Form<ContactProps>
           loading={loading}
           onSubmit={handleSubmit}
           validation={VALIDATION_SCHEMAS.CONTACT}
           initialValues={{ name: '', email: '', subject: '', message: '' }}>
-          <FormInput name="name" label="Name" as="text" />
-          <FormInput name="email" label="Email" as="email" />
-          <FormInput name="subject" label="Subject" as="text" />
-          <FormInput name="message" label="Message..." as="textarea" />
+          <FormInput name="name" label={intl.formatMessage({ id: 'name' })} as="text" />
+          <FormInput name="email" label={intl.formatMessage({ id: 'email' })} as="email" />
+          <FormInput name="subject" label={intl.formatMessage({ id: 'subject' })} as="text" />
+          <FormInput name="message" label={intl.formatMessage({ id: 'message' })} as="textarea" />
         </Form>
       </div>
     </section>

@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import SectionTitle from 'components/SectionTitle';
 import { StaticImage } from 'gatsby-plugin-image';
+import { useIntl } from 'gatsby-plugin-intl';
 import React from 'react';
 
 interface AboutItemProps {
@@ -28,45 +29,52 @@ const AboutItem = (props: AboutItemProps) => {
 };
 
 export default () => {
+  const intl = useIntl();
+
   return (
     <section className="px-10 pb-10 lg:pt-20 lg:pb-20 bg-white" id="about">
       <div className="lg:text-center pt-10 lg:pt-0">
-        <SectionTitle meta="Comprehensive IT solutions.">About</SectionTitle>
+        <SectionTitle meta={intl.formatMessage({ id: 'about_title' })}>
+          {intl.formatMessage({ id: 'about' })}
+        </SectionTitle>
       </div>
       <div className="text-content mb-5 flex flex-col gap-14 max-w-[60rem] mx-auto">
         <AboutItem
-          title="Expertise & Customization"
-          img={<StaticImage src="../../static/about-1.png" alt="Expertise & Customization" width={800} />}
-          content="With more than 11 years of experience in providing professional services my aim is to deliver exceptional solutions that guarantee customer satisfaction and help businesses achieve their goals."
+          title={intl.formatMessage({ id: 'about_title_1' })}
+          img={
+            <StaticImage src="../../static/about-1.png" alt={intl.formatMessage({ id: 'about_title_1' })} width={800} />
+          }
+          content={intl.formatMessage({ id: 'about_meta_1' })}
         />
         <AboutItem
-          title="High-Converting Design"
+          title={intl.formatMessage({ id: 'about_title_2' })}
           onRight
-          img={<StaticImage src="../../static/about-2.png" alt="High-Converting Design" width={800} />}
-          content="Designing and developing landing websites that captivate visitors and improve
-          conversion rates. Create robust e-commerce platforms that streamline online
-          transactions and enhance the customer experience."
+          img={
+            <StaticImage src="../../static/about-2.png" alt={intl.formatMessage({ id: 'about_title_2' })} width={800} />
+          }
+          content={intl.formatMessage({ id: 'about_meta_2' })}
         />
         <AboutItem
-          title="UI/UX & SSO Excellence"
-          img={<StaticImage src="../../static/about-3.png" alt="UI/UX & SSO Excellence" width={800} />}
-          content="UI/UX integration, ensuring that your website or application not only looks visually
-          appealing but also provides a seamless user experience. Implementing Single Sign-On (SSO)
-          authentication solutions that enhance security and simplify user access."
+          title={intl.formatMessage({ id: 'about_title_3' })}
+          img={
+            <StaticImage src="../../static/about-3.png" alt={intl.formatMessage({ id: 'about_title_3' })} width={800} />
+          }
+          content={intl.formatMessage({ id: 'about_meta_3' })}
         />
         <AboutItem
           onRight
-          title="Payment & API Mastery"
-          img={<StaticImage src="../../static/about-4.png" alt="Payment & API Mastery" width={800} />}
-          content="Payment integration, which allows businesses to securely process transactions
-          online. API development that enable seamless data exchange between different
-          software applications, streamlining workflow and boosting efficiency."
+          title={intl.formatMessage({ id: 'about_title_4' })}
+          img={
+            <StaticImage src="../../static/about-4.png" alt={intl.formatMessage({ id: 'about_title_4' })} width={800} />
+          }
+          content={intl.formatMessage({ id: 'about_meta_4' })}
         />
         <AboutItem
-          title="SaaS Innovation"
-          img={<StaticImage src="../../static/about-5.png" alt="SaaS Innovation" width={500} />}
-          content="Build Software as a Service (SaaS) platforms that provide a scalable and cost-effective
-          solution for delivering software applications to customers."
+          title={intl.formatMessage({ id: 'about_title_5' })}
+          img={
+            <StaticImage src="../../static/about-5.png" alt={intl.formatMessage({ id: 'about_title_5' })} width={500} />
+          }
+          content={intl.formatMessage({ id: 'about_meta_5' })}
         />
       </div>
     </section>

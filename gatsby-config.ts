@@ -5,10 +5,10 @@ require(`dotenv`).config();
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `codcut | Complete IT Services`,
-    headline: `Provider of IT services and consultancy`,
+    headline: `Provider of IT consulting and services`,
     url: `https://codcut.com`,
     siteUrl: `https://codcut.com`,
-    description: `Provider of IT services, web application, mobile app, API creation, payment integration, eCommerce, Adobe Experience Manager, fullstack, agile, CMS, UI/UX.`,
+    description: `Provider of comprehensive IT solutions including web and mobile app development, API creation, payment integration, eCommerce platforms, Adobe Experience Manager expertise, full-stack development, agile methodologies, CMS implementations and UI/UX design.`,
     language: `en`,
     image: `https://codcut.com/logo.png`,
     author: `Raoul Bivolaru`,
@@ -79,6 +79,16 @@ const config: GatsbyConfig = {
             file: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900',
           },
         ],
+      },
+    },
+    `gatsby-plugin-react-helmet-async`,
+    {
+      resolve: `gatsby-plugin-intl`,
+      options: {
+        path: `${__dirname}/src/intl`,
+        languages: ['en', 'ro'],
+        defaultLanguage: 'en',
+        redirect: true,
       },
     },
     `gatsby-plugin-offline`,
