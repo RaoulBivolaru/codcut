@@ -52,7 +52,7 @@ const ContactPage = () => {
             <div className="flex flex-col gap-10">
               <ContactItem label="contact@codcut.com" icon={<FiMail />} asEmail />
               <ContactItem label="+40 743 158 478" icon={<FiPhone />} asPhone />
-              <ContactItem label="Romania, Dumbravita" icon={<FiMapPin />} />
+              <ContactItem label="Romania, Timisoara" icon={<FiMapPin />} />
               <ContactItem label="09:00 - 18:00" icon={<FiClock />} />
             </div>
           </div>
