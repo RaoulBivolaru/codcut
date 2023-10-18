@@ -12,7 +12,7 @@ export default function () {
 
   return (
     <header
-      className={clsx('py-5 px-8 flex justify-between items-center right-0 left-0 top-0 z-10 container mx-auto', {
+      className={clsx('py-5 px-8 flex justify-between items-center right-0 left-0 top-0 z-10 lg:container mx-auto', {
         sticky: isContact,
         absolute: !isContact,
       })}>
