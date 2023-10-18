@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function () {
   return (
-    <section className="pt-52 px-10 pb-10 container mx-auto">
+    <section className="pt-52 px-8 pb-10 container mx-auto">
       <h1 className="text-white text-6xl font-bold tracking-wide mb-5 ">Privacy Policy</h1>
       <p className="text-content">
         codcut (“we,” “our,” or “us”) is committed to protecting your privacy. This Privacy Policy explains how your

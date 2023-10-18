@@ -32,7 +32,7 @@ export default () => {
   const intl = useIntl();
 
   return (
-    <section className="px-10 pb-10 lg:pt-20 lg:pb-20 bg-white" id="about">
+    <section className="px-8 pb-10 lg:pt-20 lg:pb-20 bg-white" id="about">
       <div className="lg:text-center pt-10 lg:pt-0">
         <SectionTitle meta={intl.formatMessage({ id: 'about_title' })}>
           {intl.formatMessage({ id: 'about' })}

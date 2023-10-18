@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className="bg-shade border-t border-border">
       <div className="container mx-auto">
-        <div className="p-10 flex items-center justify-between">
+        <div className="p-8 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Image src="/icon.svg" alt="logo" w={30} />
             <p className="text-content pt-1 leading-none">{intl.formatMessage({ id: 'footer' }, { year: YEAR })}</p>

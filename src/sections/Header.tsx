@@ -12,7 +12,7 @@ export default function () {
 
   return (
     <header
-      className={clsx('py-5 px-10 flex justify-between items-center right-0 left-0 top-0 z-10 container mx-auto', {
+      className={clsx('py-5 px-8 flex justify-between items-center right-0 left-0 top-0 z-10 container mx-auto', {
         sticky: isContact,
         absolute: !isContact,
       })}>
@@ -21,7 +21,7 @@ export default function () {
       </NativeLink>
       <HeaderNavigation />
       <LanguageSwitch />
-      {!isContact && <Link label={intl.formatMessage({ id: 'lets_talk' })} to="/contact" />}
+      {!isContact && <Link label={intl.formatMessage({ id: 'lets_talk' })} to="/contact" className="ml-auto md:ml-0" />}
     </header>
   );
 }

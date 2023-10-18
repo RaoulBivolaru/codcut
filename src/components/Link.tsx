@@ -20,7 +20,7 @@ const Link: FC<LinkProps> = props => {
       to={to}
       type={isSubmit ? 'submit' : 'button'}
       className={clsx(
-        'flex items-center transition-all hover:bg-gradient-to-l from-accent_shade to-accent bg-gradient-to-br rounded-md text-white px-5 py-2 lg:px-6 lg:py-3 uppercase tracking-wider text-sm',
+        'flex items-center transition-all hover:bg-gradient-to-l from-accent_shade to-accent bg-gradient-to-br rounded-md text-white px-4 py-2 lg:px-6 lg:py-3 uppercase tracking-wider text-sm',
         [className],
         {
           'lg:from-gray lg:to-brand': ghost,

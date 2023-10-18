@@ -8,7 +8,7 @@ export default function () {
   const intl = useIntl();
 
   return (
-    <section className="px-10 bg-white lg:text-center" id="work">
+    <section className="px-8 bg-white lg:text-center" id="work">
       <div className="container mx-auto">
         <SectionTitle meta={intl.formatMessage({ id: 'work_meta' })}>{intl.formatMessage({ id: 'work' })}</SectionTitle>
         <div className="flex flex-col md:grid grid-cols-2 gap-10 items-start mt-10 max-w-[60rem] mx-auto">

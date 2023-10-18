@@ -38,7 +38,7 @@ const ContactPage = () => {
   return (
     <Layout className="flex flex-col">
       <div className="bg-white flex flex-grow">
-        <div className="flex px-10 xl:px-56 container mx-auto relative gap-10 mb-auto flex-col lg:flex-row">
+        <div className="flex px-8 xl:px-56 container mx-auto relative gap-10 mb-auto flex-col lg:flex-row">
           <div className="flex flex-col">
             <Contact />
             <p className="text-content text-left">{intl.formatMessage({ id: 'contact_1' })}</p>
