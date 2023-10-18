@@ -89,7 +89,7 @@ const config: GatsbyConfig = {
         path: `${__dirname}/src/intl`,
         languages: ['en', 'ro'],
         defaultLanguage: 'en',
-        redirect: true,
+        redirect: false,
       },
     },
     `gatsby-plugin-offline`,
