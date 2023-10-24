@@ -10,7 +10,7 @@ const SEO = () => {
   return (
     <>
       <Helmet>
-        <html lang="en" />
+        <html lang={intl.locale} />
         <title>{intl.formatMessage({ id: 'title' })}</title>
         <meta name="description" content={intl.formatMessage({ id: 'description' })} />
         <meta name="author" content={meta.author} />

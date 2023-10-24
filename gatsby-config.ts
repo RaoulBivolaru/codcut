@@ -29,8 +29,6 @@ const config: GatsbyConfig = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-tsconfig-paths`,
     `gatsby-plugin-postcss`,
-    `gatsby-plugin-robots-txt`,
-    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
