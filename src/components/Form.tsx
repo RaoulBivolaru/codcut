@@ -2,6 +2,7 @@ import React, { PropsWithChildren } from 'react';
 import { Formik, FormikHelpers, Form as FormDefault, FormikValues } from 'formik';
 import { InferType } from 'yup';
 import Button from './Button';
+import { useIntl } from 'gatsby-plugin-intl';
 
 interface FormProps<P extends FormikValues> {
   loading: boolean;
@@ -12,6 +13,7 @@ interface FormProps<P extends FormikValues> {
 
 const Form = <P extends FormikValues>(props: PropsWithChildren<FormProps<P>>) => {
   const { initialValues, children, onSubmit, validation, loading } = props;
+  const intl = useIntl();
 
   const handleSubmit = async (values: P, helpers: FormikHelpers<P>) => {
     try {
@@ -27,7 +29,7 @@ const Form = <P extends FormikValues>(props: PropsWithChildren<FormProps<P>>) =>
       {({ handleSubmit }) => (
         <FormDefault noValidate>
           {children}
-          <Button label="Submit" onClick={handleSubmit} loading={loading} isSubmit />
+          <Button label={intl.formatMessage({ id: 'submit' })} onClick={handleSubmit} loading={loading} isSubmit />
         </FormDefault>
       )}
     </Formik>
