@@ -4,11 +4,11 @@ require(`dotenv`).config();
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `codcut | Complete IT Services`,
-    headline: `Provider of IT consulting and services`,
+    title: `codcut | Tailored Digital Solutions`,
+    headline: `Premier IT Consulting and Customized Digital Services`,
     url: `https://codcut.com`,
     siteUrl: `https://codcut.com`,
-    description: `Provider of comprehensive IT solutions including web and mobile app development, API creation, payment integration, eCommerce platforms, Adobe Experience Manager expertise, full-stack development, agile methodologies, CMS implementations and UI/UX design.`,
+    description: `Delivering tailored IT solutions including web and mobile app development, API engineering, secure payment integrations, dynamic eCommerce platforms, Adobe Experience Manager expertise, full-stack development, agile project execution, CMS configurations, and immersive UI/UX design.`,
     language: `en`,
     image: `https://codcut.com/logo.png`,
     author: `Raoul Bivolaru`,
@@ -38,12 +38,12 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'codcut | Complete IT Services',
+        title: `codcut | Tailored Digital Solutions`,
         short_name: 'codcut',
         start_url: '/',
         lang: 'en',
         icon: './static/logo.png',
-        description: `Provider of IT services, web application, mobile app, API creation, payment integration, eCommerce, Adobe Experience Manager, fullstack, agile, CMS, UI/UX.`,
+        description: `Delivering tailored IT solutions including web and mobile app development, API engineering, secure payment integrations, dynamic eCommerce platforms, Adobe Experience Manager expertise, full-stack development, agile project execution, CMS configurations, and immersive UI/UX design.`,
         icons: [
           {
             src: '/android-chrome-192x192.png',
