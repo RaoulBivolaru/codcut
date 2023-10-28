@@ -18,11 +18,11 @@ const AboutItem = (props: AboutItemProps) => {
     <div className="flex-col flex lg:flex-row items-center gap-10">
       {React.cloneElement(img, {
         objectFit: 'contain',
-        className: clsx('px-14 lg:px-0 max-w-sm rounded-2xl w-full lg:w-auto', { 'lg:order-2': onRight }),
+        className: clsx('px-14 lg:px-0 max-w-xs rounded-2xl w-full lg:w-auto flex-shrink-0', { 'lg:order-2': onRight }),
       })}
       <div>
         <h3 className="text-2xl text-accent font-bold tracking-wide uppercase mb-2">{title}</h3>
-        <p className="text-lg">{content}</p>
+        <p className="text-md">{content}</p>
       </div>
     </div>
   );

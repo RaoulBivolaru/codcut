@@ -11,17 +11,17 @@
   "contact_2": "Ai o idee de aplicație? sau vrei să îți extinzi afacerea online? Hai să discutăm!",
   "info": "Informații",
   "about": "Domenii de expertiză",
-  "about_title": "Soluții Digitale de la A la Z.",
-  "about_title_1": "Soluții Personalizate",
-  "about_meta_1": "Cu peste un deceniu de experiență profesionala, scopul meu este să creez soluții remarcabile care să asigure încântarea clienților și să ajut companiile să își realizeze ambițiile.",
-  "about_title_2": "Design Centrat pe Conversii",
-  "about_meta_2": "Crearea de pagini de aterizare atractive pentru a îmbunătăți ratele de conversie, alături de platforme robuste de comerț electronic care simplifică tranzacțiile online și îmbogățesc interacțiunea cu clienții.",
-  "about_title_3": "Integrare UI/UX & SSO",
-  "about_meta_3": "Armonizarea designului UI/UX pentru site-uri web sau aplicații vizual atractive și ușor de utilizat. Implementarea soluțiilor Single Sign-On (SSO) pentru o securitate îmbunătățită și acces facil al utilizatorilor.",
-  "about_title_4": "Plăților & API",
-  "about_meta_4": "Facilitarea procesării securizate a tranzacțiilor online prin integrări de plată. Dezvoltare API pentru un schimb de date lin între diverse aplicații software, îmbunătățind fluxul de lucru și eficiența operațională.",
-  "about_title_5": "Dezvoltare SaaS",
-  "about_meta_5": "Crearea de platforme Software as a Service (SaaS) care oferă căi scalabile și cost-eficiente pentru livrarea aplicațiilor software utilizatorilor.",
+  "about_title": "Soluții digitale de la A la Z.",
+  "about_title_1": "Programator Full-Stack",
+  "about_meta_1": "Pe parcursul călătoriei mele ca programator, m-am aprofundat în ambele capete ale spectrului de dezvoltare. Pe backend, am orchestrat microservicii, am gestionat API-uri și am folosit NodeJS pentru a asigura un flux de date și o logică a aplicației fără probleme. Pe frontend, am folosit puterea React și NextJS pentru a crea interfețe intuitive.",
+  "about_title_2": "Adobe Experience Manager (AEM)",
+  "about_meta_2":"Cu o cunoștință profundă a AEM, am livrat în mod constant soluții digitale pentru lideri din industrie precum Bruker, Allianz, Virgin Media, SunstarGUM și Webasto. Proficiența mea se extinde la crearea de componente personalizate, servleturi și servicii, asigurând că platformele digitale sunt nu numai funcționale, dar și centrate pe utilizator.",
+  "about_title_3": "E-commerce",
+  "about_meta_3": "Contribuind semnificativ la sectorul e-commerce, în special cu Boots din Marea Britanie, mi-am perfecționat abilitățile în crearea de experiențe de cumpărături. Fie că implementez secțiuni în sistemele de coș și de checkout sau concep căutări avansate de produse, mă asigur că utilizatorii au o călătorie lină și eficientă de la navigare la achiziție.",
+  "about_title_4": "Integrare și Migrare de Sisteme",
+  "about_meta_4": "Integrarea este esența unui ecosistem digital coeziv. Expertiza mea se află în integrarea sistemelor de autentificare unică (SSO), în special cu Keycloak, și în migrarea datelor utilizatorilor pentru a asigura un serviciu neîntrerupt. În plus, contribuțiile mele la migrațiile de site-uri, în special cu nume renumite precum Bruker, evidențiază angajamentul meu de a îmbunătăți experiența utilizatorilor asigurând în același timp integritatea datelor.",
+  "about_title_5": "Arhitect Digital Global",
+  "about_meta_5":"Într-o lume tot mai globalizată, recunosc importanța adaptării la audiențe diverse. Lucrările mele cu SunstarGUM și Webasto au implicat traducerea și personalizarea platformelor digitale pentru diverse regiuni, asigurând că atât conținutul, cât și funcționalitățile sunt cultural rezonante și regional relevante.",
   "name": "Nume",
   "email": "Email",
   "subject": "Subiect",
@@ -33,19 +33,219 @@
   "hero_2": "Soluții IT personalizate",
   "hero_3": "prezența ta digitală",
   "hero_4": "De la idee la lansare, ofer servicii de dezvoltare web de la cap la coadă pentru a-ți mări prezența online.",
-  "implemented_projects": "Cele mai recente proiecte implementate.",
+  "implemented_projects": "Proiecte implementate.",
   "work": "Lucru",
-  "buktio_title": "Aplicație web Buktio",
-  "skyhavoc_title": "Joc pe browser Skyhavoc",
-  "babinio_title": "Aplicație mobilă Babinio",
-  "covermy_title": "Aplicație web CoverMy",
-  "brokerfy_title": "Aplicație web Brokerfy",
+  "buktio": {
+    "title": "Buktio",
+    "description": "O platformă cuprinzătoare pe care am creat-o de la zero, incluzând backend, frontend și design.",
+    "tech": [
+        "NestJS",
+        "NextJS",
+        "Node",
+        "ReactJS",
+        "Tailwind",
+        "PostgreSQL",
+        "PrismaIO",
+        "GraphQL",
+        "HTML/CSS",
+        "Typescript"
+    ],
+    "features": [
+        "Scrie cărți: Redactează cărți open-source sau private, deschizând calea pentru contribuții din comunitate. Fiecare contribuție, totuși, necesită aprobarea autorului cărții sau a unui moderator desemnat.",
+        "Continuări alternative: Ai o idee nouă pentru o poveste existentă? Creează o continuare alternativă din orice segment al unei cărți open-source, folosind puterea fragmentelor de conținut.",
+        "Crearea cărților premium: Devino un autor premium și monetizează-ți operele. Ai grijă, acest avantaj este disponibil în funcție de țară. Cu fiecare like sau vizualizare de la cititorii premium, vei primi o sumă lunară.",
+        "Abonament de utilizator premium: Scufundă-te în toate cărțile premium cu un abonament lunar/anual. În plus, angajamentul tău susține direct pasiunea autorilor premium.",
+        "Co-autorat: Ajută cărțile open-source cu adăugările tale. Câștigă insigna de co-autor odată ce intrările tale sunt aprobate.",
+        "Participă la lectură: Bucură-te de vastul conținut al platformei. Creează o listă de lectură și savurează comorile scrise de comunitate."
+      ]
+  },
+  "skyhavoc": {
+    "title": "Skyhavoc",
+    "description": "Scufundă-te într-un joc MMO extins pentru browser, având ca temă spațiul cosmic. Construit de la zero de mine, oferă o abordare unică genului de jocuri cu tematică spațială.",
+    "tech": [
+        "Firebase",
+        "ReactJS",
+        "ThreeJS",
+        "Node",
+        "HTML/CSS"
+    ],
+    "features": [
+        "Explorarea spațiului: Porniți în călătoria cosmică cu o singură planetă sub dominia ta. Navighează prin vastitatea spațiului, întâlnind alți jucători, sisteme solare misterioase și galaxii îndepărtate. Misiunea ta? Descoperă secretele universului și revendică-ți locul printre stele.",
+        "Crează Alianțe: Pe măsură ce traversezi cosmosul, opțiunea de a te uni cu alții te așteaptă. Alătură-te unei alianțe existente sau creează una nouă. Alianțele semnalează apariția unor nave uriașe, împuternicind membrii să exploreze galaxiile cu un avânt nou.",
+        "Progresul planetar: Planeta ta natală este piatra de temelie pentru saga ta spațială. Investește timp și resurse pentru a o actualiza, consolidându-ți poziția în ierarhia intergalactică.",
+        "O perspectivă nouă: Deși Skyhavoc are temele familiare găsite în alte MMO-uri spațiale, esența sa este distinctă. Pentru început, cunoștințele tale despre univers sunt inițial limitate la un singur sistem solar, ales la întâmplare, într-o galaxie enigmatică. Spre deosebire de jocurile convenționale unde întregul sistem solar este expus de la început, Skyhavoc îi ascunde pe alți jucători în mister. Această alegere de design amplifică emoția descoperirii, împingând jucătorii să se aventureze dincolo de cunoscut și să îmbrățișeze noul."
+      ]
+  },
+  "babinio": {
+    "title": "Babinio",
+    "description": "O aplicație mobilă meticulos creată destinată părinților proactivi dornici să rămână în ton cu rutinele zilnice ale bebelușului lor.",
+    "tech": [
+        "React Native",
+        "KeystoneJS",
+        "GraphQL",
+        "Typescript",
+        "PostgreSQL",
+        "PrismaIO"
+    ],
+    "features": [
+        "Monitorizare holistică a bebelușului: Cu Babinio la îndemână, obține o vedere panoramică asupra activităților zilnice ale bebelușului tău. De la orele de masă și sesiunile de somn, la momentele de joacă și controalele de sănătate, totul este încapsulat într-o interfață intuitivă.",
+        "Logare diversă a activităților. Păstrează evidența unei game variate de activități: mâncare, somn, exerciții fizice, joc, sănătate, plâns, baie, masaj.",
+        "Perspectivă istorică: Vizualizează activitățile bebelușului tău cu o funcție de istorie cuprinzătoare. Fie că vrei să vezi o zi anume, săptămană sau lună, Babinio te acoperă. Un instrument neprețuit pentru programările la pediatru sau discuțiile cu îngrijitorii."
+      ]
+  },
+  "covermy": {
+    "title": "CoverMy",
+    "description": "O platformă inovatoare pe care am sculptat-o de la zero, cu fiecare strat - de la backend și frontend la design - conceput meticulos de mine.",
+    "tech": [
+        "AWS",
+        "ReactJS",
+        "Laravel",
+        "PHP",
+        "Typeform",
+        "Typescript",
+        "HTML/CSS",
+        "MySQL",
+        "Tailwind"
+    ],
+    "features": [
+        "Filozofia CoverMy: Asigurările tradiționale par a fi de domeniul trecutului. Sunt greoaie, fragmentate și, sincer, învechite. Intră în scenă CoverMy - revoluționând peisajul asigurărilor. Cu sisteme de ultimă oră, simplificăm procesul de cotație, acordând utilizatorilor puterea de a se angaja cu o multitudine de furnizori de asigurări, toate sub umbrela CoverMy.",
+        "Structura prețurilor: Susținem transparența. Deși CoverMy este o poartă gratuită pentru consumatori, veniturile noastre provin de la furnizorii de asigurări. Și iată punctul de cotitură - indiferent de alegerea politicii sau preferința furnizorului, nu există nicio influență din partea noastră.",
+        "Spectrul nostru de asigurări: Solicită o cotație și urmărește magia. Datele tale sunt trimise unei serii de brokeri de asigurări. Ei evaluează meticulos detaliile tale, evaluează riscul asociat și revin cu o acoperire potrivită. Arsenalul lor? Mii de politici.",
+        "Diverse acoperiri de asigurare: CoverMy este oprirea ta unică pentru toate nevoile de asigurare generală. De la asigurare auto la acoperirea afacerilor complexe - CoverMy asigură că ești protejat.",
+        "Informații: CoverMy este sinonim cu asigurările ușoare. Nu suntem aici pentru a compara sau a oferi asigurări. Misiunea noastră? Facilitarea interacțiunilor fără probleme cu brokerii de asigurări, de la obținerea de cotații și comunicări cu brokeri la gestionarea documentelor și reamintirea expirării politicilor. Conținutul nostru este pur factual. Responsabilitatea consultării financiare revine brokerului tău. CoverMy rămâne neutru, fără a evalua sau clasifica cotațiile. Brokerul tău oferă sfaturi personalizate."
+      ]
+  },
+  "brokerfy": {
+    "title": "Brokerfy",
+    "description": "O platformă pe care am construit-o meticulos de la zero, backend, frontend și design. Ea stă ca un testament pentru conectivitatea fără sudură între brokeri și clienți în domenii variate.",
+    "tech": [
+        "NextJS",
+        "ReactJS",
+        "Websockets",
+        "Typescript",
+        "HTML/CSS",
+        "tRPC",
+        "PostgreSQL",
+        "PrismaIO"
+    ],
+    "features": [
+        "Servicii de credit: Conectează-te cu brokeri experimentați, adepți în complexitățile serviciilor de credit. De la împrumuturi personale la carduri de credit, primești îndrumări către soluția financiară ideală. Bucură-te de avantajele sfaturilor de expert, acces la o pleiadă de brokeri și rate competitive adaptate aspirațiilor tale financiare.",
+        "Servicii imobiliare: Te aventurezi în domeniul imobiliar? Brokerii noștri, cu cunoștințele lor despre piața locală, sunt ghidul tău pentru urmărirea proprietăților. Beneficiezi de o vastă rețea de specialiști în imobiliare, informații locale de neprețuit și servicii adaptate preferințelor tale.",
+        "Servicii de asigurare: Protejează-ți bunurile și persoanele dragi prin intermediul gamei noastre largi de servicii de asigurare. Fie că este vorba de asigurarea locuinței, auto sau viață, brokerii noștri sunt alături de tine. Savurează avantajele diferiților specialiști în asigurări, servicii adaptate și liniștea adusă de o acoperire completă.",
+        "Pentru Brokeri: Ridică-ți clientela și traiectoria afacerii alăturându-te Brokerfy. Modelul nostru bazat pe abonament oferă brokerilor o oportunitate de a accesa un vast rezervor de clienți care caută activ servicii de brokeraj. Prin abonare, obții acces premium la platforma noastră, asigurând o vizibilitate crescută pentru serviciile tale. Acest lucru, combinat cu eforturile noastre de marketing adaptate și o serie de instrumente eficiente de afaceri, te pune pe calea creșterii și succesului."
+      ]
+  },
+  "bruker": {
+    "title": "Bruker",
+    "description": "Am contribuit la migrația strategică a Bruker Corporation către Adobe Experience Manager, facilitând o prezență web robustă și scalabilă. În cadrul migrației, am avut un rol esențial în asigurarea unei tranziții fără probleme, optimizând experiența utilizatorului și funcționalitatea din spatele scenei.",
+    "tech": [
+        "Adobe AEM",
+        "HTML/CSS",
+        "Keycloak",
+        "Java",
+        "Javascript"
+    ],
+    "features": [
+        "Dezvoltare de componente: Am proiectat și implementat componente AEM, atât pentru configurare cât și pentru interfața utilizator. M-am asigurat că, componentele sunt versatile și se pot adapta la nevoile variate de conținut ale site-ului Bruker",
+        "Creare de servleturi: Am dezvoltat servleturi pentru a gestiona cereri specifice de backend, optimizând performanța site-ului și asigurând o preluare și procesare rapidă a datelor.",
+        "Implementare de servicii: Am creat servicii adaptate nevoilor specifice ale Bruker, asigurând o gestionare eficientă a datelor și o integrare fără probleme cu alte sisteme.",
+        "Configurare OSGI: Am folosit OSGI pentru a configura și gestiona modulele aplicației. Acest lucru a asigurat că, configurarea AEM a Bruker a fost modulară, ușor de întreținut și se poate adapta cu ușurință la cerințele viitoare.",
+        "Sistem SSO cu Keycloak: Am proiectat și implementat un sistem Single Sign-On (SSO) folosind Keycloak, oferind utilizatorilor o experiență unificată de autentificare pe mai multe aplicații și platforme.",
+        "Migrare utilizatori: Am migrat cu succes datele utilizatorilor existenți către noul sistem SSO, asigurând integritatea datelor și o tranziție lină pentru utilizatori, cu perturbări minime."
+    ]
+  },
+  "allianz": {
+    "title": "Allianz Group",
+    "description": "Am colaborat cu Allianz, un titan global în domeniul asigurărilor și serviciilor financiare. Profitând de capacitățile Adobe Experience Manager (AEM), am transpus cu meticulozitate viziunile de design în componente web dinamice, asigurând o experiență de utilizator fluidă și captivantă.",
+    "tech": [
+        "Adobe AEM",
+        "HTML/CSS",
+        "Javascript"
+    ],
+    "features": [
+        "Dezvoltare de componente: Am creat componente AEM, atât pentru configurație cât și pentru interfața utilizator, pentru a oglindi specificațiile de design furnizate de Allianz.",
+        "Integrare de design: Am integrat fără probleme designul dat în AEM, asigurându-mă că produsul final era atât estetic plăcut, cât și funcțional solid.",
+        "Design Responsive: M-am asigurat că, componentele dezvoltate erau responsive și se adaptau la o gamă variată de dispozitive, garantând o experiență consistentă a utilizatorului."
+    ]
+  },
+  "virgin_media": {
+    "title": "Virgin Media",
+    "description": "Am colaborat cu Virgin Media, o companie proeminentă de telecomunicații, pentru a amplifica prezența lor online. Folosind Adobe Experience Manager (AEM), am creat meticulos componente web dinamice și am implementat funcționalități de backend care să răspundă nevoilor specifice ale brandului.",
+    "tech": [
+        "Adobe AEM",
+        "HTML/CSS",
+        "Javascript",
+        "Java"
+    ],
+    "features": [
+        "Dezvoltare de componente: Am proiectat componente AEM pentru configurație și interfața utilizator, aliniindu-mă la designul și specificațiile funcționale ale Virgin Media.",
+        "Implementare de Servlets și Servicii: Am creat servlets și servicii pentru a gestiona funcționalități specifice de backend, asigurând recuperarea, procesarea și integrarea eficientă a datelor în cadrul ecosistemului AEM.",
+        "Sistem de filtrare pentru colecția de telefoane: Am proiectat și implementat un sistem avansat de filtrare pentru o colecție de telefoane stocate în AEM, îmbunătățind experiența utilizatorului și simplificând procesul de selecție a produselor."
+    ]
+  },
+  "boots": {
+    "title": "Boots",
+    "description": "Am avut privilegiul de a contribui la Boots, o platformă e-commerce renumită din Marea Britanie. Jucând un rol atât în partea de backend, cât și în cea de frontend, am fost esențial în îmbunătățirea experienței de cumpărături și a infrastructurilor subiacente ale platformei.",
+    "tech": [
+        "Javascript",
+        "HTML/CSS",
+        "ReactJS",
+        "Node",
+        "Microservices"
+    ],
+    "features": [
+        "Dezvoltare Backend API: Am proiectat și optimizat API-urile de backend, asigurând un flux de date fără probleme și funcționalități robuste pentru a satisface nevoile diverse ale platformei e-commerce.",
+        "Gestionarea Microserviciilor & Orchestrare: Utilizând ExpressJS, am gestionat microservicii complexe, orchestrându-le pentru a asigura operațiuni armonioase și performanță optimă.",
+        "Îmbunătățirea Sistemului de Coș și Finalizare Comandă: În domeniul frontend, folosind React, am jucat un rol crucial în proiectarea și implementarea unor secțiuni esențiale ale unui sistem de coș și finalizare comandă. Această revizuire a avut ca scop simplificarea călătoriei utilizatorului, facilitând selecția, revizuirea și achiziția produselor."
+    ]
+  },
+  "sunstar_gum": {
+    "title": "Sunstar GUM",
+    "description": "Am colaborat cu Sunstar GUM, unde am utilizat Adobe AEM pentru a mentena și extinde codul existent. Am avut ocazia să creez componente noi, să dezvolt servlets și servicii, și de asemenea, am lucrat pe secțiunea dispatcher pentru a extinde regiunile suportate.",
+    "tech": [
+        "Adobe AEM",
+        "HTML/CSS",
+        "Javascript",
+        "Java"
+    ],
+    "features": [
+        "Mentenanța Codului: Am asigurat o mentenanță eficientă a codului existent, abordând orice probleme sau defecțiuni care au apărut și optimizând performanța generală.",
+        "Crearea de Componente Noi: Bazându-mă pe nevoile și specificațiile proiectului, am dezvoltat componente noi în Adobe AEM pentru a îmbunătăți funcționalitatea și experiența utilizatorului.",
+        "Dezvoltarea Servleturilor și Serviciilor: Am proiectat și implementat servlets și servicii noi pentru a satisface cerințele complexe ale platformei.",
+        "Extindere Dispatcher: Am lucrat pe secțiunea dispatcher, asigurându-mă că platforma poate suporta și servește corect conținutul pentru regiuni suplimentare si cele existente, extinzând astfel acoperirea și accesibilitatea platformei."
+    ]
+  },
+  "webasto": {
+    "title": "Webasto",
+    "description": "În colaborarea mea cu Webasto, am utilizat intensiv Adobe AEM pentru a crea componente adaptate cerințelor proiectului. Deși eforturile mele au acoperit atât partea de backend, cât și frontend, accentul a fost pus în mod decisiv pe frontend. Am folosit React pentru a implementa funcții complexe, cum ar fi un căutător de produse, un catalog de produse complet cu filtre și o interfață de hartă pentru a prezenta locațiile agențiilor Webasto.",
+    "tech": [
+        "Adobe AEM",
+        "ReactJS",
+        "HTML/CSS",
+        "Typescript",
+        "Java",
+        "Dispatcher"
+    ],
+    "features": [
+        "Crearea de componente în AEM: Am dezvoltat mai multe componente în AEM pentru a consolida funcționalitatea site-ului și a îmbunătăți interacțiunile utilizatorilor.",
+        "Dezvoltare Servlets: Am creat servlets adaptate componentelor, asigurând o preluare și procesare eficientă a datelor.",
+        "Dezvoltare frontend bazată pe React: Am utilizat React pentru a construi funcții frontend dinamice.",
+        "Căutător de produse: Un instrument care ajută utilizatorii să găsească rapid produsele pe care le doresc.",
+        "Catalog de produse: Un catalog interactiv, permițând utilizatorilor să parcurgă produsele și să aplice filtre pentru a restrânge căutarea lor.",
+        "Harta agențiilor Webasto: Am conceput o interfață de hartă pentru a reprezenta vizual și a oferi acces ușor la locațiile agențiilor Webasto."
+    ]
+  },
+  "consultancy": "Consultanță",
+  "my_involvement": "Implicarea mea",
+  "tech_stack":"Tehnologii",
+  "check_out": "Vezi proiect",
+  "about_project": "Informații despre proiect",
   "development": "Dezvoltare",
   "skills": "Aptitudini",
   "message_sent": "Mesaj trimis!",
   "contact_confirmation": "Vă rugăm așteptați până când cererea dvs. este revizuită.",
   "privacy": "Confidențialitate",
-  "work_meta": "Cele mai recente proiecte implementate.",
+  "work_meta": "Portfoliul meu",
   "skills_meta": "Experiență dovedită cu următoarele instrumente",
   "english": "Engleză",
   "romanian": "Română",

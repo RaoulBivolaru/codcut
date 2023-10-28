@@ -11,17 +11,17 @@
   "contact_2": "Have an app idea? or want to expand your business online? Let's talk!",
   "info": "Info",
   "about": "About",
-  "about_title": "End-to-End Digital Solutions",
-  "about_title_1": "Mastery in Tailored Solutions",
-  "about_meta_1": "Leveraging over a decade of professional service, my goal is to engineer outstanding solutions ensuring client delight and aiding businesses in realizing their ambitions.",
-  "about_title_2": "Conversion-Centric Designs",
-  "about_meta_2":"Crafting engaging landing pages to boost conversion rates alongside robust e-commerce platforms simplifying online transactions and enriching customer interaction.",
-  "about_title_3": "Excellence in UI/UX & SSO Integration",
-  "about_meta_3": "Harmonizing UI/UX design for visually compelling and user-friendly websites or applications. Employing Single Sign-On (SSO) solutions for an improved security and effortless user access.",
-  "about_title_4": "Payment Processing & API Expertise",
-  "about_meta_4": "Facilitating secure online transaction processing through payment integrations. API crafting for smooth data interchange between diverse software applications, enhancing workflow and operational efficiency.",
-  "about_title_5": "Innovative SaaS Development",
-  "about_meta_5":"Creating Software as a Service (SaaS) platforms offering scalable, cost-effective avenues for delivering software applications to users.",
+  "about_title": "End-to-end digital solutions",
+  "about_title_1": "Full-Stack Developer",
+  "about_meta_1": "My journey as a developer has seen me dive deep into both ends of the development spectrum. On the backend, I've orchestrated microservices, managed APIs, and employed NodeJS to ensure seamless data flow and application logic. On the frontend, I've harnessed the power of React and NextJS to craft intuitive interfaces.",
+  "about_title_2": "Adobe Experience Manager (AEM)",
+  "about_meta_2":"With a deep-seated knowledge of AEM, I have consistently delivered digital solutions for industry leaders like Bruker, Allianz, Virgin Media, SunstarGUM and Webasto. My proficiency spans creating tailored components, servlets, and services, ensuring that digital platforms are not only functional but also user-centric.",
+  "about_title_3": "E-commerce",
+  "about_meta_3": "Having contributed significantly to the e-commerce sector, most notably with Boots in the UK, I've honed my skills in creating seamless shopping experiences. Whether it's implementing sections in cart and checkout systems or devising advanced product finders, I ensure that users have a smooth and efficient journey from browsing to purchase.",
+  "about_title_4": "System Integration & Migration",
+  "about_meta_4": "Integration is at the heart of a cohesive digital ecosystem. My expertise lies in integrating Single Sign-On (SSO) systems, notably with Keycloak, and migrating user data to ensure uninterrupted service. Furthermore, my contributions to site migrations, especially with renowned names like Bruker, showcase my commitment to enhancing user experience while ensuring data integrity.",
+  "about_title_5": "Global Digital Architect",
+  "about_meta_5":"In an increasingly globalized world, I recognize the importance of catering to diverse audiences. My work with SunstarGUM and Webasto has involved translating and tailoring digital platforms for various regions, ensuring that both content and functionalities are culturally resonant and regionally relevant.",
   "name": "Name",
   "email": "Email",
   "subject": "Subject",
@@ -33,19 +33,221 @@
   "hero_2": "Crafting tailored IT solutions",
   "hero_3": "your digital presence",
   "hero_4": "From ideation to launch, I provide end-to-end web development services to elevate your brand's online presence.",
-  "implemented_projects": "Latest implemented projects.",
+  "implemented_projects": "Past projects.",
   "work": "Work",
-  "buktio_title": "Web app Buktio",
-  "skyhavoc_title": "Browser game Skyhavoc",
-  "babinio_title": "Mobile app Babinio",
-  "covermy_title": "Web app CoverMy",
-  "brokerfy_title": "Web app Brokerfy",
+  "buktio": {
+    "title": "Buktio",
+    "description": "A comprehensive platform I crafted from the ground up, encompassing backend, frontend, and design.",
+    "tech": [
+        "NestJS",
+        "NextJS",
+        "Node",
+        "ReactJS",
+        "Tailwind",
+        "PostgreSQL",
+        "PrismaIO",
+        "GraphQL",
+        "HTML/CSS",
+        "Typescript"
+    ],
+    "features": [
+        "Write Books: Draft open-source or private books, opening the avenue for community contributions. Each contribution, however, needs the nod from the book's author or a designated moderator.",
+        "Alternative Continuations: Got a twist for an existing tale? Spin off an alternate continuation from any segment of an open-source book, harnessing the power of content fragments.",
+        "Premium Book Creation: Step up as a premium author and monetize your masterpieces. Be mindful, this perk's availability varies by country. With each like or view from premium readers, you pocket a monthly sum.",
+        "Premium User Subscription: Dive deep into all premium books with a monthly/yearly subscription. Plus, your commitment directly fuels the passion of premium authors.",
+        "Co-Authorship: Dive into open-source books with your additions. Earn the co-author badge once your inputs gain approval.",
+        "Engage in Reading: Immerse yourself in the vast sea of content. Curate a reading list and relish the treasures penned by the community."
+    ]
+  },
+  "skyhavoc": {
+    "title": "Skyhavoc",
+    "description": "Immerse yourself in an expansive MMO Browser Game set against the awe-inspiring canvas of space. Built from the ground up by yours truly, it offers a unique twist to the space-themed gaming genre.",
+    "tech": [
+        "Firebase",
+        "ReactJS",
+        "ThreeJS",
+        "Node",
+        "HTML/CSS"
+    ],
+    "features": [
+        "Space Exploration: Embark on your cosmic journey with a lone planet under your dominion. Navigate the vastness of space, encountering fellow players, mysterious solar systems, and distant galaxies. Your quest? Unravel the universe's secrets and stake your claim among the stars.",
+        "Forge Alliances: As you traverse the cosmos, the option to band together beckons. Join an existing alliance or establish your own. Alliances herald the advent of colossal ships, empowering members to explore galaxies with renewed vigor.",
+        "Planetary Progression: Your home planet is the cornerstone of your space saga. Invest time and resources to upgrade it, bolstering your position in the intergalactic hierarchy.",
+        "A Fresh Perspective: While Skyhavoc might echo familiar themes found in other space MMOs, its essence is distinct. For starters, your knowledge of the universe is initially limited to a single, randomly assigned solar system within an enigmatic galaxy. Unlike conventional games where the solar system's entirety is laid bare from the get-go, Skyhavoc cloaks other players in mystery. This design choice amplifies the thrill of discovery, pushing players to venture beyond the known and embrace the new."
+    ]
+  },
+  "babinio": {
+    "title": "Babinio",
+    "description": "A meticulously crafted mobile app designed for proactive parents keen on staying attuned to their baby's daily routines.",
+    "tech": [
+        "React Native",
+        "KeystoneJS",
+        "GraphQL",
+        "Typescript",
+        "Tailwind",
+        "PostgreSQL",
+        "PrismaIO"
+    ],
+    "features": [
+        "Holistic Baby Monitoring: With Babinio at your fingertips, gain a panoramic view of your baby's day-to-day activities. From meal times and nap sessions to spirited playtimes and wellness checks, it's all encapsulated in one intuitive interface.",
+        "Diverse Activity Logging: Keep tabs on an array of activities: eating, sleeping, exercising, playing, health, crying, bathing, massage.",
+        "Historical Insight: Retrace your baby's activities with a comprehensive history feature. Whether you're reminiscing about a specific day, reviewing a week's patterns, or analyzing monthly milestones, Babinio's got you covered. An invaluable tool for pediatrician appointments or discussions with caregivers."
+    ]
+  },
+  "covermy": {
+    "title": "CoverMy",
+    "description": "An innovative platform I've sculpted from scratch, with every layer—from backend and frontend to design—painstakingly devised by yours truly.",
+    "tech": [
+        "AWS",
+        "ReactJS",
+        "Laravel",
+        "PHP",
+        "Typeform",
+        "Typescript",
+        "HTML/CSS",
+        "MySQL",
+        "Tailwind"
+    ],
+    "features": [
+        "The CoverMy Philosophy: Traditional insurance feels like a relic. It's cumbersome, fragmented, and, frankly, outdated. Enter CoverMy—revolutionizing the insurance landscape. With state-of-the-art systems, we streamline the quoting process, granting users the power to engage with a multitude of insurance providers, all under the CoverMy umbrella.",
+        "Pricing Structure: We champion transparency. While CoverMy is a free gateway for consumers, our revenues stem from insurance providers. And here's the deal-breaker—irrespective of your policy choice or provider preference, there's zero bias on our end.",
+        "Our Insurance Spectrum: Request a quote and watch the magic unfold. Your data is dispatched to a battalion of insurance brokers. They meticulously evaluate your details, gauging the associated risk, and revert with fitting coverage. Their arsenal? Thousands of policies.",
+        "Diverse Insurance Coverage: CoverMy is your one-stop-shop for all general insurance needs. From third-party car insurance to intricate business coverage—CoverMy ensures you're shielded.",
+        "Insights: CoverMy is synonymous with effortless insurance. We're not here to compare or provide insurance. Our mission? Facilitate seamless interactions with insurance brokers, from procuring quotes and broker communications to document management and policy expiration reminders. Our content is purely factual. The onus of financial advice rests with your broker. CoverMy remains neutral, neither assessing nor ranking quotes. Your broker provides personalized advice."
+    ]
+  },
+  "brokerfy": {
+    "title": "Brokerfy",
+    "description": "An all-encompassing platform I meticulously built from scratch, backend, frontend and design. It stands as a testament to seamless connectivity between brokers and customers across varied domains.",
+    "tech": [
+        "NextJS",
+        "ReactJS",
+        "Websockets",
+        "Typescript",
+        "HTML/CSS",
+        "tRPC",
+        "PostgreSQL",
+        "PrismaIO"
+    ],
+    "features": [
+        "Credit Services: Connect with seasoned brokers adept in the intricacies of credit services. From personal loans to credit cards, get guided to the ideal financial solution. Enjoy the perks of expert advice, access to a plethora of brokers, and competitive rates tailored to your fiscal aspirations.",
+        "Real Estate Services: Venturing into the real estate realm? Our brokers, with their local market acumen, are your go-to for property pursuits. Benefit from a vast network of real estate specialists, invaluable local insights, and services fine-tuned to your preferences.",
+        "Insurance Services: Secure your assets and dear ones through our wide-ranging insurance services. Whether it's home, auto, or life insurance, our brokers got your back. Relish the advantages of diverse insurance specialists, custom-fit services, and the peace of mind from comprehensive coverage.",
+        "For Brokers: Elevate your clientele and business trajectory by joining Brokerfy. Our subscription-based model offers brokers an opportunity to tap into a vast reservoir of customers actively seeking broker services. By subscribing, you gain premium access to our platform, ensuring enhanced visibility for your services. This, combined with our tailored marketing efforts and an array of efficient business tools, sets you on the path to growth and success."
+    ]
+  },
+  "bruker": {
+    "title": "Bruker",
+    "description": "Contributed to Bruker Corporation's strategic migration to Adobe Experience Manager, facilitating a robust and scalable web presence. As part of the migration, I played a pivotal role in ensuring that the transition was seamless, optimizing user experience and backend functionality.",
+    "tech": [
+        "Adobe AEM",
+        "HTML/CSS",
+        "Keycloak",
+        "Java",
+        "Javascript"
+    ],
+    "features": [
+        "Component Development: Designed and implemented AEM components, both for configuration and user interface. Ensured that components were versatile and could adapt to the varied content needs of the Bruker site.",
+        "Servlet Creation: Developed servlets to handle specific backend requests, optimizing site performance and ensuring swift data retrieval and processing.",
+        "Service Implementation: Crafted services tailored to Bruker's specific needs, ensuring efficient data management and seamless integration with other systems.",
+        "OSGI Configuration: Leveraged the power of the OSGI framework to configure and manage application modules. This ensured that Bruker's AEM setup was modular, maintainable, and could easily adapt to future requirements.",
+        "SSO System with Keycloak: Designed and implemented a Single Sign-On (SSO) system using Keycloak, providing users with a unified authentication experience across multiple applications and platforms.",
+        "User Migration: Successfully migrated existing user data to the new SSO system, ensuring data integrity and a smooth transition for users, with minimal disruptions."
+    ]
+  },
+  "allianz": {
+    "title": "Allianz Group",
+    "description": "Collaborated with Allianz, a global titan in the insurance and financial services sector. Leveraging the capabilities of Adobe Experience Manager (AEM), I meticulously translated design visions into dynamic web components, ensuring a fluid and engaging user experience.",
+    "tech": [
+        "Adobe AEM",
+        "HTML/CSS",
+        "Javascript"
+    ],
+    "features": [
+        "Component Development: Skillfully crafted AEM components, both configuration and user interface, to mirror the design specifications provided by Allianz.",
+        "Design Integration: Seamlessly integrated given design into AEM, ensuring that the final output was both aesthetically pleasing and functionally robust.",
+        "Responsive Design: Ensured that the developed components were responsive and adaptive across a range of devices, guaranteeing a consistent user experience."
+    ]
+  },
+  "virgin_media": {
+    "title": "Virgin Media",
+    "description": "Collaborated with Virgin Media, a prominent telecommunications company, to amplify their online presence. Leveraging Adobe Experience Manager (AEM), I meticulously crafted dynamic web components and implemented backend functionalities that catered to the specific needs of the brand.",
+    "tech": [
+        "Adobe AEM",
+        "HTML/CSS",
+        "Javascript",
+        "Java"
+    ],
+    "features": [
+        "Component Development: Engineered AEM components for both configuration and user interface, aligning with Virgin Media's design and functional specifications.",
+        "Servlet and Service Implementation: Crafted servlets and services to handle specific backend functionalities, ensuring efficient data retrieval, processing, and integration within the AEM ecosystem.",
+        "Phone Collection Filter System: Designed and implemented an advanced filter system for a collection of phones stored within AEM, enhancing user experience and streamlining the product selection process."
+    ]
+  },
+  "boots": {
+    "title": "Boots",
+    "description": "I had the privilege of contributing to Boots, a renowned UK-based e-commerce platform. Undertaking roles in both the backend and frontend realms, I was pivotal in enhancing the platform's shopping experience and underlying infrastructures.",
+    "tech": [
+        "Javascript",
+        "HTML/CSS",
+        "ReactJS",
+        "Node",
+        "Microservices"
+    ],
+    "features": [
+        "Backend API Development: Architected and optimized backend APIs, ensuring seamless data flow and robust functionalities to cater to the diverse needs of the e-commerce platform.",
+        "Microservices Management & Orchestration: Utilizing ExpressJS, I managed intricate microservices, orchestrating them to ensure streamlined operations and optimal performance.",
+        "Cart & Checkout System Enhancement: In the frontend domain, using React, I was instrumental in designing and implementing critical sections of a revamped cart and checkout system. This overhaul aimed to simplify the user journey, making product selection, review, and purchase a breeze."
+    ]
+  },
+  "sunstar_gum": {
+    "title": "Sunstar GUM",
+    "description": "I collaborated with Sunstar GUM, where I used Adobe AEM to maintain and extend the existing code. I had the opportunity to create new components, develop servlets and services, and I also worked on the dispatcher section to extend the supported regions.",
+    "tech": [
+        "Adobe AEM",
+        "HTML/CSS",
+        "Javascript",
+        "Java",
+        "Dispatcher"
+    ],
+    "features": [
+        "Code Maintenance: Ensured efficient maintenance of the existing code, addressing any issues or bugs that arose and optimizing overall performance.",
+        "New Component Creation: Based on the project's needs and specifications, I developed new components in Adobe AEM to enhance functionality and user experience.",
+        "Development of Servlets and Services: Designed and implemented new servlets and services to meet the platform's complex requirements.",
+        "Dispatcher Extension: Worked on the dispatcher section, ensuring that the platform could support and correctly serve content for additional regions, thus expanding the platform's coverage and accessibility."
+    ]
+  },
+  "webasto": {
+    "title": "Webasto",
+    "description": "In my collaboration with Webasto, I heavily utilized Adobe AEM to craft components tailored to the project's requirements. While my efforts spanned both backend and frontend, the emphasis was decidedly on the frontend. I used React to implement intricate features such as a product finder, an exhaustive product catalog complete with filters, and a map interface to showcase Webasto agency locations.",
+    "tech": [
+        "Adobe AEM",
+        "ReactJS",
+        "HTML/CSS",
+        "Typescript",
+        "Java",
+        "Dispatcher"
+    ],
+    "features": [
+        "Component Creation in AEM: Developed multiple components in AEM to bolster the site's functionality and improve user interactions.",
+        "Servlets Development: Crafted servlets tailored to the components, ensuring efficient data retrieval and processing.",
+        "React-based Frontend Development: Deployed React to construct dynamic frontend features",
+        "Product Finder: A tool to help users swiftly locate the products they desire.",
+        "Product Catalog: An interactive catalog, allowing users to peruse products and apply filters to narrow down their search.",
+        "Webasto Agency Map: Devised a map interface to visually represent and provide easy access to Webasto agency locations."
+    ]
+  },
   "development": "Development",
+  "consultancy": "Consultancy",
+  "tech_stack":"Tech stack",
+  "check_out": "View project",
+  "about_project": "About the project",
+  "my_involvement": "My involvement",
   "skills": "Skills",
   "message_sent": "Message sent!",
   "contact_confirmation": "Please wait until your request is reviewed.",
   "privacy": "Privacy",
-  "work_meta": "Latest implemented projects.",
+  "work_meta": "My portfolio",
   "skills_meta": "Proven experience with the following tools",
   "english": "English",
   "romanian": "Romanian",
