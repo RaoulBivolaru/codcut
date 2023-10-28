@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import Button from 'components/Button';
 import Modal from 'components/Modal';
 import { Link } from 'gatsby';
@@ -54,7 +55,7 @@ const Project: FC<ProjectProps> = props => {
         </small>
       </div>
       <div className="max-md:flex-col flex gap-5 mt-10">
-        <div>
+        <div className={clsx({ 'max-md:hidden': !url })}>
           <div className="max-md:hidden max-md:w-full w-[300px] h-[400px] border-2 border-brand bg-white rounded-lg overflow-hidden flex-shrink-0 mb-5">
             {React.cloneElement(image, { className: 'w-full h-full' })}
           </div>
