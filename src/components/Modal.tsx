@@ -35,7 +35,7 @@ const Modal: FC<PropsWithChildren<ModalProps>> = props => {
 
       {isAnimating && (
         <>
-          <div className="fixed inset-0 opacity-60 bg-brand h-screen z-10" onClick={() => setIsVisible(false)}></div>
+          <div className="fixed inset-0 opacity-60 bg-brand z-10" onClick={() => setIsVisible(false)}></div>
           <animated.section
             style={animation}
             className="rounded-lg fixed bg-white z-10 inset-0 m-auto h-fit w-[90%] max-w-6xl max-md:max-h-[650px] flex">
