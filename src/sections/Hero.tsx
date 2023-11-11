@@ -9,7 +9,7 @@ export default function () {
 
   return (
     <section
-      className="px-8 pb-10 pt-32 md:pt-44 lg:py-0 lg:h-screen flex items-center justify-between font-heading relative lg:container mx-auto"
+      className="px-8 pb-8 md:pb-10 pt-32 md:pt-44 lg:py-0 lg:h-screen flex items-center justify-between font-heading relative lg:container mx-auto"
       id="home">
       <div className="flex w-full flex-col relative">
         <span className="hidden md:block text-white uppercase tracking-widest font-light text-xs lg:text-xl mb-1 opacity-50">
