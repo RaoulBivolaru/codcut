@@ -10,7 +10,7 @@ const config: GatsbyConfig = {
     siteUrl: `https://codcut.com`,
     description: `Delivering tailored IT solutions including web and mobile app development, API engineering, secure payment integrations, dynamic eCommerce platforms, Adobe Experience Manager expertise, full-stack development, agile project execution, CMS configurations, and immersive UI/UX design.`,
     language: `en`,
-    image: `https://codcut.com/logo.png`,
+    image: `https://codcut.com/meta-logo.png`,
     author: `Raoul Bivolaru`,
   },
   trailingSlash: `never`,
@@ -42,7 +42,7 @@ const config: GatsbyConfig = {
         short_name: 'codcut',
         start_url: '/',
         lang: 'en',
-        icon: './static/logo.png',
+        icon: './static/meta-logo.png',
         description: `Delivering tailored IT solutions including web and mobile app development, API engineering, secure payment integrations, dynamic eCommerce platforms, Adobe Experience Manager expertise, full-stack development, agile project execution, CMS configurations, and immersive UI/UX design.`,
         icons: [
           {

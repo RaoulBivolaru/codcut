@@ -10,8 +10,10 @@ import Work from 'sections/Work';
 const HomePage = () => {
   return (
     <Layout>
-      <HeroBlob />
-      <Hero />
+      <div className="relative overflow-hidden">
+        <HeroBlob />
+        <Hero />
+      </div>
       <About />
       <Work />
       <Skills />

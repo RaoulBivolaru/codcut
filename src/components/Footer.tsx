@@ -15,12 +15,14 @@ const Footer = () => {
         <div className="p-8 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Image src="/icon.svg" alt="logo" w={30} />
-            <p className="text-content pt-1 leading-none">{intl.formatMessage({ id: 'footer' }, { year: YEAR })}</p>
+            <p className="text-white/80 text-sm pt-1 leading-none">
+              {intl.formatMessage({ id: 'footer' }, { year: YEAR })}
+            </p>
           </div>
           {isHome && (
             <div>
               <a
-                className="text-content text-xs italic underline leading-1 block"
+                className="text-white/80 text-xs italic underline leading-1 block"
                 href="https://www.flaticon.com/free-icons/seo-and-web"
                 title="seo and web icons"
                 target="_blank"

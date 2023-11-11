@@ -21,8 +21,8 @@ const AboutItem = (props: AboutItemProps) => {
         className: clsx('px-14 lg:px-0 max-w-xs rounded-2xl w-full lg:w-auto flex-shrink-0', { 'lg:order-2': onRight }),
       })}
       <div>
-        <h3 className="text-2xl text-accent font-bold tracking-wide uppercase mb-2">{title}</h3>
-        <p className="text-md">{content}</p>
+        <h3 className="text-xl md:text-2xl text-accent font-bold tracking-wide uppercase mb-2">{title}</h3>
+        <p className="text-sm tracking-wide md:text-md">{content}</p>
       </div>
     </div>
   );
@@ -68,13 +68,6 @@ export default () => {
             <StaticImage src="../../static/about-4.png" alt={intl.formatMessage({ id: 'about_title_4' })} width={800} />
           }
           content={intl.formatMessage({ id: 'about_meta_4' })}
-        />
-        <AboutItem
-          title={intl.formatMessage({ id: 'about_title_5' })}
-          img={
-            <StaticImage src="../../static/about-5.png" alt={intl.formatMessage({ id: 'about_title_5' })} width={500} />
-          }
-          content={intl.formatMessage({ id: 'about_meta_5' })}
         />
       </div>
     </section>

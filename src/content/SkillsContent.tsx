@@ -19,7 +19,7 @@ const SkillsContent = () => {
       <SkillItem title="HTML/CSS" />
       <SkillItem title="ReactJS" />
       <SkillItem title="Typescript" />
-      <SkillItem title="Adobe Experience Manager" />
+      <SkillItem title="Adobe AEM" />
       <SkillItem title="NodeJS" />
       <SkillItem title="NextJS" />
       <SkillItem title="NestJS" />

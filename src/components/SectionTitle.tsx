@@ -20,7 +20,7 @@ const SectionTitle = (props: SectionTitleProps) => {
         )}>
         {children}
       </h2>
-      {meta && <p className="text-shade mb-10 mt-2 text-sm lg:text-lg">{meta}</p>}
+      {meta && <p className="text-shade mb-10 mt-2 text-sm lg:text-lg tracking-wide">{meta}</p>}
     </>
   );
 };
