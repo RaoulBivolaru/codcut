@@ -5,7 +5,7 @@ require(`dotenv`).config();
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `codcut | Tailored Digital Solutions`,
-    headline: `Premier IT Consulting and Customized Digital Services`,
+    headline: `Elite customised digital consulting and services`,
     url: `https://codcut.com`,
     siteUrl: `https://codcut.com`,
     description: `Delivering tailored IT solutions including web and mobile app development, API engineering, secure payment integrations, dynamic eCommerce platforms, Adobe Experience Manager expertise, full-stack development, agile project execution, CMS configurations, and immersive UI/UX design.`,
