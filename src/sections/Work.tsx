@@ -60,17 +60,6 @@ export default function () {
             isConsultancy
             image={<StaticImage src="../../static/boots.png" alt="Boots" objectFit="contain" />}
           />
-          <Project
-            contentKey="sunstar_gum"
-            url="https://sunstargum.com"
-            isConsultancy
-            image={<StaticImage src="../../static/sunstargum.png" alt="Sunstar GUM" objectFit="contain" />}
-          />
-          <Project
-            contentKey="webasto"
-            isConsultancy
-            image={<StaticImage src="../../static/webasto.png" alt="Webasto" objectFit="contain" />}
-          />
         </div>
       </div>
     </section>
