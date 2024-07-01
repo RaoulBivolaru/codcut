@@ -1,7 +1,7 @@
 import Layout from 'components/Layout';
 import { useIntl } from 'gatsby-plugin-intl';
 import React from 'react';
-import { FiPhone, FiMail, FiClock, FiMapPin } from 'react-icons/fi';
+import { FiMail, FiClock, FiMapPin } from 'react-icons/fi';
 import Contact from 'sections/Contact';
 
 interface ContactItemProps {
@@ -49,7 +49,6 @@ const ContactPage = () => {
             </h3>
             <div className="flex flex-col gap-10">
               <ContactItem label="contact@codcut.com" icon={<FiMail />} asEmail />
-              <ContactItem label="+40 743 158 478" icon={<FiPhone />} asPhone />
               <ContactItem label="Romania, Timisoara" icon={<FiMapPin />} />
               <ContactItem label="09:00 - 18:00" icon={<FiClock />} />
             </div>
